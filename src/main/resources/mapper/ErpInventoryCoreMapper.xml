@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.runjing.learn_runjing.erp.mapper.ErpInventoryCoreMapper">
+    <!--定义基础返回数据映射关系-->
+    <resultMap id="BaseResultMap" type="com.runjing.learn_runjing.erp.domain.ErpInventoryCore">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="company_sn" column="company_sn" jdbcType="VARCHAR"/>
+            <result property="warehouse_sn" column="warehouse_sn" jdbcType="VARCHAR"/>
+            <result property="sku_sn" column="sku_sn" jdbcType="VARCHAR"/>
+            <result property="goods_inv_level_category_no" column="goods_inv_level_category_no" jdbcType="INTEGER"/>
+            <result property="goods_inv_level_no" column="goods_inv_level_no" jdbcType="INTEGER"/>
+            <result property="inv_type" column="inv_type" jdbcType="INTEGER"/>
+            <result property="inv_status" column="inv_status" jdbcType="INTEGER"/>
+            <result property="qty" column="qty" jdbcType="INTEGER"/>
+            <result property="ord_occupy_qty" column="ord_occupy_qty" jdbcType="INTEGER"/>
+            <result property="pre_occupy_qty" column="pre_occupy_qty" jdbcType="INTEGER"/>
+            <result property="pur_in_transit_inv_qty" column="pur_in_transit_inv_qty" jdbcType="INTEGER"/>
+            <result property="trf_in_transit_inv_qty" column="trf_in_transit_inv_qty" jdbcType="INTEGER"/>
+            <result property="pre_pur_in_transit_inv_qty" column="pre_pur_in_transit_inv_qty" jdbcType="INTEGER"/>
+            <result property="remaining_assign_qty" column="remaining_assign_qty" jdbcType="INTEGER"/>
+            <result property="version_number" column="version_number" jdbcType="INTEGER"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+    <!--设置缓存配置-->
+    <cache size="10" readOnly="true" blocking="true"
+           flushInterval="3000" eviction="LRU"/>
+    <!--设置通用数据库字段-->
+    <sql id="Base_Column_List">
+        id,company_sn,warehouse_sn,
+        sku_sn,goods_inv_level_category_no,goods_inv_level_no,
+        inv_type,inv_status,qty,
+        ord_occupy_qty,pre_occupy_qty,pur_in_transit_inv_qty,
+        trf_in_transit_inv_qty,pre_pur_in_transit_inv_qty,remaining_assign_qty,
+        version_number,remark,update_time,
+        create_time
+    </sql>
+    <!--开启缓存且设置触发时缓存刷新-->
+    <select id="getCursor" resultMap="BaseResultMap" parameterType="integer" useCache="true" flushCache="true">
+        select <include refid="Base_Column_List"/>  from erp.erp_inventory_core
+        <if test="size != null and size != ''">
+            limit #{size}
+        </if>
+    </select>
+    <select id="getErpInventoryCore" resultType="com.runjing.learn_runjing.erp.domain.ErpInventoryCore" parameterType="long">
+        select <include refid="Base_Column_List"/> from erp.erp_inventory_core
+        <if test="id != null and id != ''">
+            where id = #{id}
+        </if>
+        <if test="id == null and id == ''">
+            limit 10
+        </if>
+    </select>
+    <select id="getBatch" resultMap="BaseResultMap" parameterType="java.util.List">
+        select <include refid="Base_Column_List"/> from erp.erp_inventory_core eic where eic.id in
+        <foreach collection="list" item="id" index="index" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </select>
+</mapper>
