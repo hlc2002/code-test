@@ -4,19 +4,19 @@ import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.rocketmq.spring.annotation.RocketMQMessageListener;
 import org.apache.rocketmq.spring.core.RocketMQListener;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 /**
  * @author forestSpringH
  * @date 2023/6/22
  * @project learn_runjing
  */
-@Component
+@Service
 @Slf4j
 @RocketMQMessageListener(topic = "TEST_RUNJING_ERP_LEARN_TOPIC", selectorExpression = "tag1",consumerGroup = "test_runjing_erp_learn_consumer")
-public class MessageConsumer implements RocketMQListener<Message<String>> {
+public class MessageConsumer implements RocketMQListener<String> {
     @Override
-    public void onMessage(Message<String> stringMessage) {
+    public void onMessage(String stringMessage) {
         log.info("accept message={}", JSON.toJSONString(stringMessage));
     }
 }

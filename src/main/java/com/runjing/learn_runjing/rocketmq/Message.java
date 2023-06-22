@@ -1,6 +1,8 @@
 package com.runjing.learn_runjing.rocketmq;
 
+import com.alibaba.fastjson.JSON;
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -11,11 +13,15 @@ import java.io.Serializable;
  * @date 2023/6/22
  * @project learn_runjing
  */
-@Getter
-@Setter
+
+@Data
 public class Message <T> implements Serializable {
     private Long taskId;
     private T data;
     private Long sendTime = System.currentTimeMillis();
     private final static long serialVersionUID = 1L;
+
+    public String toJSON() {
+        return JSON.toJSONString(this);
+    }
 }

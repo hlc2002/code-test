@@ -33,8 +33,7 @@ public class ErpInventoryCoreServiceImpl implements ErpInventoryCoreService {
 
     @Resource
     private ErpInventoryCoreMapper erpInventoryCoreMapper;
-    
-    @SneakyThrows
+
     @Override
     public List<ErpInventoryCore> getErpInventoryCoreList(Integer size) {
         List<ErpInventoryCore> result = new ArrayList<>();

@@ -15,6 +15,6 @@ public class ErpControllerAdvice {
 
     @ExceptionHandler(RuntimeException.class)
     public void handleException(RuntimeException e) {
-
+        log.error(e.getMessage());
     }
 }

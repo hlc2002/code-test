@@ -2,6 +2,7 @@ package com.runjing.learn_runjing.erp.config;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
@@ -12,9 +13,11 @@ import org.springframework.web.servlet.ModelAndView;
  * @project learn_runjing
  */
 @Component
+@Slf4j
 public class ErpInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+        log.info(System.currentTimeMillis()+": 请求接收");
         return HandlerInterceptor.super.preHandle(request, response, handler);
     }
 

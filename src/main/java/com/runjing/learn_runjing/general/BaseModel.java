@@ -9,4 +9,8 @@ import java.io.Serializable;
  */
 public class BaseModel implements Serializable {
     final static long serialVersionUID = 1L;
+    public  static final int SUCCESS = 200;
+    public  static final int FAILURE = 400;
+    public static final int ERROR = 403;
+    public  static final int REFUSE = 404;
 }

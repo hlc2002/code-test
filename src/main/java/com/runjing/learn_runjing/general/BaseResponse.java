@@ -1,5 +1,9 @@
 package com.runjing.learn_runjing.general;
 
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -8,12 +12,11 @@ import java.util.Map;
  * @date 2023/6/21
  * @project learn_runjing
  */
+@Getter
+@Setter
 public class BaseResponse<T> extends BaseModel{
 
-    private final int SUCCESS = 200;
-    private final int FAILURE = 400;
-    private final int ERROR = 403;
-    private final int REFUSE = 404;
+
     private int code;
     private String message;
     private T data;
@@ -21,7 +24,7 @@ public class BaseResponse<T> extends BaseModel{
 
     public static <T> BaseResponse<T> success(String message, T data){
         BaseResponse<T> response = new BaseResponse<T>();
-        response.code = response.SUCCESS;
+        response.code = SUCCESS;
         response.message = message;
         response.data = data;
         return response;
@@ -30,21 +33,21 @@ public class BaseResponse<T> extends BaseModel{
 
     public static <T> BaseResponse<T> failure(String message){
         BaseResponse<T> response = new BaseResponse<T>();
-        response.code = response.FAILURE;
+        response.code = FAILURE;
         response.message = message;
         return response;
     }
 
     public static <T> BaseResponse<T> error(String message) {
         BaseResponse<T> response = new BaseResponse<T>();
-        response.code = response.ERROR;
+        response.code = ERROR;
         response.message = message;
         return response;
     }
 
     public static <T> BaseResponse<T> error() {
         BaseResponse<T> response = new BaseResponse<T>();
-        response.code = response.ERROR;
+        response.code = ERROR;
         return response;
     }
 }

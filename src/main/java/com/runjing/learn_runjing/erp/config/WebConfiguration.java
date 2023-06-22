@@ -22,9 +22,5 @@ public class WebConfiguration implements WebMvcConfigurer {
         registry.addInterceptor(erpInterceptor);
     }
 
-    @Override
-    public void addCorsMappings(CorsRegistry registry) {
-        WebMvcConfigurer.super.addCorsMappings(registry);
-    }
 
 }
