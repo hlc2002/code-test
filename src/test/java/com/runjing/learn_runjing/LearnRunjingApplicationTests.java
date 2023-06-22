@@ -36,13 +36,7 @@ class LearnRunjingApplicationTests {
     @Test
     public void test() {
         redisUtil.set("hlc", 20);
-        redisUtil.setNx("hlc", 10, 60L);
+        Boolean hlc = redisUtil.setNx("hlc", 10, 60L);
+        System.out.println(hlc);
     }
-
-    @Test
-    public void testAdd() {
-        redisUtil.setNx("hlc", 10, 60L);
-        redisUtil.setNx("hlc", 20, 60L);
-    }
-
 }
