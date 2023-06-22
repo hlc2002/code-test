@@ -21,8 +21,6 @@ class LearnRunjingApplicationTests {
 
     @Test
     public void testCursor() {
-//        erpInventoryCoreService.getErpInventoryCoreList(1);
-//        erpInventoryCoreService.getErpInventoryCoreList(1);
         List<Long> ids = new LinkedList<>();
         ids.add(1L);
         ids.add(2L);

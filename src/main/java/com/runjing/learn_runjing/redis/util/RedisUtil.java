@@ -4,13 +4,17 @@ import com.runjing.learn_runjing.redis.config.RedisConfiguration;
 import com.sun.org.apache.xpath.internal.operations.Bool;
 import jakarta.annotation.Resource;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
+import org.springframework.data.geo.Circle;
+import org.springframework.data.geo.GeoResults;
+import org.springframework.data.geo.Point;
+import org.springframework.data.redis.connection.RedisGeoCommands;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 import org.springframework.util.Assert;
+import org.springframework.util.CollectionUtils;
 
 import java.time.Duration;
-import java.util.Comparator;
-import java.util.Objects;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -36,6 +40,40 @@ public class RedisUtil {
     public Boolean setNx(String key, Object value, Long expire) {
         return redisTemplate.opsForValue().setIfAbsent(key, value, Duration.ofSeconds(expire));
     }
+
+    /**插入地址信息 经纬度 地址名称 地址密钥*/
+    public Long setGeo(double latitude,double longitude,String address,String geoKey){
+        return redisTemplate.opsForGeo().add(geoKey, new Point(latitude, longitude), address);
+    }
+    /**获取某一地址的点列表 由于可能存在某一地址多点附近 故返回列表 后续开发可在确保地址加上某些用户独特信息时可以返回pointList.get(0)*/
+    public List<Point> getGeoPoint(String geoKey,String address){
+        return redisTemplate.opsForGeo().position(geoKey, address);
+    }
+    /**获取某一点附近多少长度（默认m为基本单位）内的地址与点信息*/
+    public Map<String,Point> getNeighborhoodMap(String geoKey,double latitude,double longitude,double distance){
+        Map<String,Point> neighborhoodMap = new HashMap<>();
+        GeoResults<RedisGeoCommands.GeoLocation<Object>> search = redisTemplate.opsForGeo().search(geoKey, new Circle(latitude, longitude, distance));
+        if (Objects.nonNull(search) && !CollectionUtils.isEmpty(search.getContent())) {
+            search.getContent().forEach(geoLocationGeoResult -> {
+                Point point = geoLocationGeoResult.getContent().getPoint();
+                String name = (String) geoLocationGeoResult.getContent().getName();
+                neighborhoodMap.put(name,point);
+            });
+        }
+        return neighborhoodMap;
+    }
+    /**移除地址点*/
+    public Boolean removeGeoPoint(String geoKey,double latitude, double longitude){
+        GeoResults<RedisGeoCommands.GeoLocation<Object>> search = redisTemplate.opsForGeo().search(geoKey, new Circle(latitude, longitude, 0L));
+        if (Objects.nonNull(search)){
+            Object name = search.getContent().get(0).getContent().getName();
+            return Objects.nonNull(redisTemplate.opsForGeo().remove(geoKey, name));
+        }else {
+            return true;
+        }
+
+    }
+
     /**某一键为key的键值对是否存在*/
     public Boolean exists(String key) {
         return Objects.nonNull(get(key));
