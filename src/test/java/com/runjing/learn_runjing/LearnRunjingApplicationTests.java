@@ -1,6 +1,7 @@
 package com.runjing.learn_runjing;
 
 import com.runjing.learn_runjing.erp.service.ErpInventoryCoreService;
+import com.runjing.learn_runjing.redis.util.RedisUtil;
 import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -19,7 +20,7 @@ class LearnRunjingApplicationTests {
     private ErpInventoryCoreService erpInventoryCoreService;
 
     @Test
-    public void testCursor(){
+    public void testCursor() {
 //        erpInventoryCoreService.getErpInventoryCoreList(1);
 //        erpInventoryCoreService.getErpInventoryCoreList(1);
         List<Long> ids = new LinkedList<>();
@@ -27,6 +28,21 @@ class LearnRunjingApplicationTests {
         ids.add(2L);
         erpInventoryCoreService.getBatchInventoryCoreList(ids);
         erpInventoryCoreService.getBatchInventoryCoreList(ids);
+    }
+
+    @Resource
+    private RedisUtil redisUtil;
+
+    @Test
+    public void test() {
+        redisUtil.set("hlc", 20);
+        redisUtil.setNx("hlc", 10, 60L);
+    }
+
+    @Test
+    public void testAdd() {
+        redisUtil.setNx("hlc", 10, 60L);
+        redisUtil.setNx("hlc", 20, 60L);
     }
 
 }
