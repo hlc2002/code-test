@@ -24,35 +24,35 @@ public class RedisUtil {
 
     @Resource
     private RedisTemplate<String, Object> redisTemplate;
-    /*插入新的String 键值对 如果存在则覆盖*/
+    /**插入新的String 键值对 如果存在则覆盖*/
     public void set(String key, Object value) {
         redisTemplate.opsForValue().set(key, value);
     }
-    /*插入新的String 键值对 并设置过期时间 单位为s 如果存在则覆盖*/
+    /**插入新的String 键值对 并设置过期时间 单位为s 如果存在则覆盖*/
     public void setEx(String key, Object value,Long expire){
         redisTemplate.opsForValue().set(key, value,expire, TimeUnit.SECONDS);
     }
-    /*如果存在key则不插入，不存在则插入，并设置过期时间 单位为s 如果后续set相同的key则当前插入的值会被覆盖*/
+    /**如果存在key则不插入，不存在则插入，并设置过期时间 单位为s 如果后续set相同的key则当前插入的值会被覆盖*/
     public Boolean setNx(String key, Object value, Long expire) {
         return redisTemplate.opsForValue().setIfAbsent(key, value, Duration.ofSeconds(expire));
     }
-    /*某一键为key的键值对是否存在*/
+    /**某一键为key的键值对是否存在*/
     public Boolean exists(String key) {
         return Objects.nonNull(get(key));
     }
-    /*获取键值为key的值*/
+    /**获取键值为key的值*/
     public Object get(String key){
         return redisTemplate.opsForValue().get(key);
     }
-    /*获取某一键值对的TTL，为-1则是永不过期，但当redis内存满载时也会根据自我的八个淘汰策略进行删除*/
+    /**获取某一键值对的TTL，为-1则是永不过期，但当redis内存满载时也会根据自我的八个淘汰策略进行删除*/
     public Long getTtl(String key){
         return redisTemplate.opsForValue().getOperations().getExpire(key,TimeUnit.SECONDS);
     }
-    /*判断某一键值为key的键值对是否是存在过期属性的*/
+    /**判断某一键值为key的键值对是否是存在过期属性的*/
     public Boolean judgeKeyWillExpire(String key){
         return !Objects.equals(getTtl(key).intValue(),-1);
     }
-    /*向链表名为listKey的链表左端插入新的元素，它的值为value*/
+    /**向链表名为listKey的链表左端插入新的元素，它的值为value*/
     public Long leftPush(String listKey,Object value) {
         Long size = redisTemplate.opsForList().size(listKey);
         if (Objects.nonNull(size) && Objects.equals(size.intValue(), 0)) {
@@ -62,12 +62,12 @@ public class RedisUtil {
             return 0L;
         }
     }
-    /*从链表名为listKey的链表中右侧吐出一个元素*/
+    /**从链表名为listKey的链表中右侧吐出一个元素*/
     public Object rightPop(String listKey){
         return redisTemplate.opsForList().rightPop(listKey);
     }
 
-    /*删除键值为key的键值对*/
+    /**删除键值为key的键值对*/
     public Boolean remove(String key) {
         return Boolean.TRUE.equals(redisTemplate.delete(key));
     }
