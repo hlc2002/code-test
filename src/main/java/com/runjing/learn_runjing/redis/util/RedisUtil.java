@@ -10,7 +10,6 @@ import org.springframework.data.geo.Point;
 import org.springframework.data.redis.connection.RedisGeoCommands;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
-import org.springframework.util.Assert;
 import org.springframework.util.CollectionUtils;
 
 import java.time.Duration;

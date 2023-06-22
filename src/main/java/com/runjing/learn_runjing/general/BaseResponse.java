@@ -1,6 +1,5 @@
 package com.runjing.learn_runjing.general;
 
-import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -9,7 +8,7 @@ import java.util.Map;
  * @date 2023/6/21
  * @project learn_runjing
  */
-public class BaseResponse<T> implements Serializable {
+public class BaseResponse<T> extends BaseModel{
 
     private final int SUCCESS = 200;
     private final int FAILURE = 400;
