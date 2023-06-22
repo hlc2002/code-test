@@ -2,9 +2,12 @@ package com.runjing.learn_runjing;
 
 import com.runjing.learn_runjing.erp.service.ErpInventoryCoreService;
 import com.runjing.learn_runjing.redis.util.RedisUtil;
+import com.runjing.learn_runjing.rocketmq.Message;
+import com.runjing.learn_runjing.rocketmq.MessageProducer;
 import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ContextConfiguration;
 
 import java.util.LinkedList;
 import java.util.List;

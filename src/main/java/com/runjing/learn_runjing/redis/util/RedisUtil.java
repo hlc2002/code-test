@@ -1,7 +1,6 @@
 package com.runjing.learn_runjing.redis.util;
 
 import com.runjing.learn_runjing.redis.config.RedisConfiguration;
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import jakarta.annotation.Resource;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.data.geo.Circle;

@@ -3,6 +3,7 @@ package com.runjing.learn_runjing;
 import com.github.xiaoymin.knife4j.core.extend.OpenApiExtendSetting;
 import com.github.xiaoymin.knife4j.core.model.MarkdownProperty;
 import com.github.xiaoymin.knife4j.spring.extension.OpenApiExtensionResolver;
+import org.apache.rocketmq.spring.core.RocketMQTemplate;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -49,5 +50,10 @@ public class LearnRunjingApplication {
         List<MarkdownProperty> markdownPropertyList = new LinkedList<>();
         markdownPropertyList.add(markdownProperty);
         return new OpenApiExtensionResolver(new OpenApiExtendSetting(), markdownPropertyList);
+    }
+
+    @Bean("RocketMQTemplate")
+    public RocketMQTemplate getRocketMqTemplate() {
+        return new RocketMQTemplate();
     }
 }
