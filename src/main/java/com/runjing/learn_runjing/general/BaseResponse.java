@@ -16,7 +16,6 @@ import java.util.Map;
 @Setter
 public class BaseResponse<T> extends BaseModel{
 
-
     private int code;
     private String message;
     private T data;
