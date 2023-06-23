@@ -31,17 +31,17 @@ public class MessageProducer {
     private RocketMQTemplate rocketMqTemplate;
 
     public void  sendMessage(Message<String> message) {
-        rocketMqTemplate.convertAndSend(TOPIC+":tag1",message.toJSON());
+        rocketMqTemplate.convertAndSend(TOPIC,message.toJSON());
     }
 
     public SendResult sendMessageAndGetResult(Message<String> message){
-        SendResult sendResult = rocketMqTemplate.syncSend(TOPIC + ":tag1", message.toJSON());
+        SendResult sendResult = rocketMqTemplate.syncSend(TOPIC, message.toJSON());
         log.info("sendResult={}", JSON.toJSONString(sendResult));
         return sendResult;
     }
 
     public void sendAsyncMsg(Message<String> message) {
-        rocketMqTemplate.asyncSend(TOPIC+":tag1", message.toJSON(), new SendCallback() {
+        rocketMqTemplate.asyncSend(TOPIC, message.toJSON(), new SendCallback() {
             @Override
             public void onSuccess(SendResult sendResult) {
                 // 处理消息发送成功逻辑

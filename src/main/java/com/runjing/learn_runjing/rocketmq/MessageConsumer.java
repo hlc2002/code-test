@@ -16,6 +16,7 @@ import org.springframework.stereotype.Service;
 @Slf4j
 @RocketMQMessageListener(topic = "TEST_RUNJING_ERP_LEARN_TOPIC",consumerGroup = "${rocketmq.producer.group}")
 public class MessageConsumer implements RocketMQListener<MessageExt> {
+
     @Override
     public void onMessage(MessageExt messageExt) {
         log.info("accept message={}", JSON.toJSONString(messageExt.getBody()));
