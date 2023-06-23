@@ -98,6 +98,10 @@ public class RedisUtil {
             return 0L;
         }
     }
+    /**获取某一链表内的全部元素*/
+    public List<Object> keysList(String listKey) {
+        return redisTemplate.opsForList().range(listKey, 0, -1);
+    }
     /**从链表名为listKey的链表中右侧吐出一个元素*/
     public Object rightPop(String listKey){
         return redisTemplate.opsForList().rightPop(listKey);
@@ -107,4 +111,5 @@ public class RedisUtil {
     public Boolean remove(String key) {
         return Boolean.TRUE.equals(redisTemplate.delete(key));
     }
+
 }

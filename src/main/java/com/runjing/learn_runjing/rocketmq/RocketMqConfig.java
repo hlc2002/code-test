@@ -20,17 +20,17 @@ public class RocketMqConfig {
     @Value("${rocketmq.name-server}")
     private String nameServer;
 
+    /**
+     * 由于使用的Spring版本是3.0.0以上，与rocketMq不是很兼容，对于rocketMqTemplate
+     * 的自动注入存在差异，如果不采用这种方式注入则会报出缺少bean的信息
+     */
     @Bean("RocketMqTemplate")
     public RocketMQTemplate rocketMqTemplate(){
         RocketMQTemplate rocketMqTemplate = new RocketMQTemplate();
         DefaultMQProducer defaultMqProducer = new DefaultMQProducer();
-//        DefaultLitePullConsumer defaultLitePullConsumer = new DefaultLitePullConsumer();
-//        defaultLitePullConsumer.setConsumerGroup("test_runjing_erp_learn_consumer");
-//        defaultLitePullConsumer.setCustomizedTraceTopic("TEST_RUNJING_ERP_LEARN_TOPIC");
         defaultMqProducer.setProducerGroup(producerGroup);
         defaultMqProducer.setNamesrvAddr(nameServer);
         rocketMqTemplate.setProducer(defaultMqProducer);
-//        rocketMqTemplate.setConsumer(defaultLitePullConsumer);
         return rocketMqTemplate;
     }
 }

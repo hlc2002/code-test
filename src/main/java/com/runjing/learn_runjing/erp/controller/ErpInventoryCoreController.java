@@ -27,10 +27,10 @@ public class ErpInventoryCoreController {
     @Resource
     private MessageProducer messageProducer;
 
-    @GetMapping("/list/{id}")
+    @GetMapping("/get/{id}")
     @ResponseBody
     public BaseResponse<ErpInventoryCore> getErpInventoryCoreList(@PathVariable("id")Long id){
-        log.info("/rpc/erp/inventoryCore/list/"+id);
+        log.info("/rpc/erp/inventoryCore/get/"+id);
         Assert.notNull(id,"参数id为空");
         Message<String> message = new Message<>();
         message.setData("查询部分库存核心");

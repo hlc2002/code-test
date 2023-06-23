@@ -36,8 +36,14 @@ class LearnRunjingApplicationTests {
 
     @Test
     public void test() {
-        redisUtil.set("hlc", 20);
-        Boolean hlc = redisUtil.setNx("hlc", 10, 60L);
-        System.out.println(hlc);
+        redisUtil.set("t0", 0);
+        System.out.println(redisUtil.getTtl("t0"));
+        redisUtil.setEx("t1",1,10L);
+        System.out.println(redisUtil.getTtl("t1"));
+        redisUtil.setNx("t2",2,10L);
+        System.out.println(redisUtil.getTtl("t2"));
+        redisUtil.leftPush("message","{id:1,optionType:delete}");
+        System.out.println(redisUtil.rightPop("message"));
+        redisUtil.remove("t0");
     }
 }
