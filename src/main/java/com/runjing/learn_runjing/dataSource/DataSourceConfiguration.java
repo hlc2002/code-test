@@ -48,7 +48,6 @@ public class DataSourceConfiguration {
         Map<Object, Object> dataSourceMap = new HashMap<>(2);
         dataSourceMap.put(DataSourceType.WRITE,wirteDruidDataSource());
         dataSourceMap.put(DataSourceType.READ,readDruidDataSource());
-        //设置动态数据源
         DynamicDataSource dynamicDataSource = new DynamicDataSource();
         dynamicDataSource.setDefaultTargetDataSource(wirteDruidDataSource());
         dynamicDataSource.setTargetDataSources(dataSourceMap);

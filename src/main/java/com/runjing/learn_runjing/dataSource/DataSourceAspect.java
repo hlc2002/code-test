@@ -30,19 +30,14 @@ public class DataSourceAspect {
         try{
             pointcut.proceed();
         }finally {
+            /*防止内存泄露：这里含有一个threadLocal，你不能忘记移除切换的数据源，或你不能忘记清理备份过来的引用。*/
             DynamicDataSourceHolder.removeDynamicDataSourceKey();
         }
     }
 
     private DataSource getDefineAnnotation(ProceedingJoinPoint joinPoint){
         MethodSignature methodSignature = (MethodSignature) joinPoint.getSignature();
-        DataSource dataSourceAnnotation = methodSignature.getMethod().getAnnotation(DataSource.class);
-        if (Objects.nonNull(methodSignature)) {
-            return dataSourceAnnotation;
-        } else {
-            Class<?> dsClass = joinPoint.getTarget().getClass();
-            return dsClass.getAnnotation(DataSource.class);
-        }
+        return methodSignature.getMethod().getAnnotation(DataSource.class);
     }
 
 }
