@@ -2,6 +2,7 @@ package com.runjing.learn_runjing.rocketmq;
 
 import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.rocketmq.common.message.MessageExt;
 import org.apache.rocketmq.spring.annotation.RocketMQMessageListener;
 import org.apache.rocketmq.spring.core.RocketMQListener;
 import org.springframework.stereotype.Service;
@@ -13,10 +14,10 @@ import org.springframework.stereotype.Service;
  */
 @Service
 @Slf4j
-@RocketMQMessageListener(topic = "TEST_RUNJING_ERP_LEARN_TOPIC", selectorExpression = "tag1",consumerGroup = "test_runjing_erp_learn_consumer")
-public class MessageConsumer implements RocketMQListener<String> {
+@RocketMQMessageListener(topic = "TEST_RUNJING_ERP_LEARN_TOPIC",consumerGroup = "${rocketmq.producer.group}")
+public class MessageConsumer implements RocketMQListener<MessageExt> {
     @Override
-    public void onMessage(String stringMessage) {
-        log.info("accept message={}", JSON.toJSONString(stringMessage));
+    public void onMessage(MessageExt messageExt) {
+        log.info("accept message={}", JSON.toJSONString(messageExt.getBody()));
     }
 }
