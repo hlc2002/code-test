@@ -71,6 +71,10 @@ public class RedisUtil {
         }
 
     }
+    /**移除某张图*/
+    public Boolean removeGeo(String geoKey){
+        return Objects.nonNull(redisTemplate.delete(geoKey));
+    }
 
     /**某一键为key的键值对是否存在*/
     public Boolean exists(String key) {

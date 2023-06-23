@@ -1,8 +1,5 @@
 package com.runjing.learn_runjing;
 
-import com.runjing.learn_runjing.rocketmq.Message;
-import com.runjing.learn_runjing.rocketmq.MessageProducer;
-import com.runjing.learn_runjing.spring.SpringHolder;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
@@ -26,7 +23,6 @@ public class LearnRunjingApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(LearnRunjingApplication.class, args);
-        SpringHolder.getBean(MessageProducer.class).sendMessage(new Message<>());
     }
 
     @Bean("TransactionTemplate")

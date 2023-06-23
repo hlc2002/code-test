@@ -10,6 +10,7 @@ import java.lang.annotation.*;
 @Target({ElementType.METHOD,ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
+@Inherited
 public @interface DataSource {
     /*数据源类型*/
     String value() default DataSourceType.READ;
