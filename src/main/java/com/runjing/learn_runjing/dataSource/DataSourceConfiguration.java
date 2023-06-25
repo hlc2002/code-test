@@ -41,12 +41,12 @@ public class DataSourceConfiguration {
         return DruidDataSourceBuilder.create().build();
     }
 
-    @Bean(name = DataSourceType.LOCAL)
-    @Qualifier(DataSourceType.LOCAL)
-    @ConfigurationProperties("spring.datasource.druid.local")
-    public DruidDataSource localDataSource() {
-        return DruidDataSourceBuilder.create().build();
-    }
+//    @Bean(name = DataSourceType.LOCAL)
+//    @Qualifier(DataSourceType.LOCAL)
+//    @ConfigurationProperties("spring.datasource.druid.local")
+//    public DruidDataSource localDataSource() {
+//        return DruidDataSourceBuilder.create().build();
+//    }
     @Bean
     @Primary
     public DynamicDataSource dynamicDataSource()
@@ -54,6 +54,7 @@ public class DataSourceConfiguration {
         Map<Object, Object> dataSourceMap = new HashMap<>(2);
         dataSourceMap.put(DataSourceType.WRITE,wirteDruidDataSource());
         dataSourceMap.put(DataSourceType.READ,readDruidDataSource());
+//        dataSourceMap.put(DataSourceType.LOCAL,localDataSource());
         DynamicDataSource dynamicDataSource = new DynamicDataSource();
         dynamicDataSource.setDefaultTargetDataSource(wirteDruidDataSource());
         dynamicDataSource.setTargetDataSources(dataSourceMap);
