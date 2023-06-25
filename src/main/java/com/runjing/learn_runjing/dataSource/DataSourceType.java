@@ -12,5 +12,6 @@ public interface DataSourceType{
 
     String WRITE = "WRITE";
     String READ = "READ";
+    String LOCAL = "LOCAL";
 
 }

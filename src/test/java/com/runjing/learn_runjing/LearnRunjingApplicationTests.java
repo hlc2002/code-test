@@ -59,4 +59,5 @@ class LearnRunjingApplicationTests {
         System.out.println(neighborhoodMap);
         redisUtil.removeGeo("erp");
     }
+
 }

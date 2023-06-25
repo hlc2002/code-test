@@ -41,6 +41,12 @@ public class DataSourceConfiguration {
         return DruidDataSourceBuilder.create().build();
     }
 
+    @Bean(name = DataSourceType.LOCAL)
+    @Qualifier(DataSourceType.LOCAL)
+    @ConfigurationProperties("spring.datasource.druid.local")
+    public DruidDataSource localDataSource() {
+        return DruidDataSourceBuilder.create().build();
+    }
     @Bean
     @Primary
     public DynamicDataSource dynamicDataSource()
