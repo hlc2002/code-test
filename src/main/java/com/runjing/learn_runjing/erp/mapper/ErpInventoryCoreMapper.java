@@ -18,12 +18,12 @@ import java.util.List;
 */
 @Mapper
 public interface ErpInventoryCoreMapper{
-    @DataSource(value = DataSourceType.READ)
+    @DataSource
     Cursor<ErpInventoryCore> getCursor(@Param("size")Integer size);
 
-    @DataSource(value = DataSourceType.READ)
+    @DataSource
     ErpInventoryCore getErpInventoryCore(@Param("id")Long id);
-    @DataSource(value = DataSourceType.READ)
+    @DataSource
     List<ErpInventoryCore> getBatch(@Param("list") List<Long> list);
 }
 

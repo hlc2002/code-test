@@ -19,7 +19,7 @@ public class DynamicDataSourceHolder {
 
     public static String getDynamicDataSourceKey(){
         String key = DYNAMIC_DATASOURCE_KEY.get();
-        return key == null ? DataSourceType.WRITE: key;
+        return key == null ? DataSourceType.READ: key;
     }
 
     public static void removeDynamicDataSourceKey(){
