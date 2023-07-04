@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
  * @project learn_runjing
  */
 @Component
-public class RpcProviderRegister implements BeanFactoryPostProcessor , ApplicationContextAware , ApplicationListener<ContextRefreshedEvent> {
+public class RpcProviderRegistor implements BeanFactoryPostProcessor , ApplicationContextAware , ApplicationListener<ContextRefreshedEvent> {
     @Override
     public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
 
