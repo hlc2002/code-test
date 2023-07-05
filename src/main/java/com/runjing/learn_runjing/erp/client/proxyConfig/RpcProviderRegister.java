@@ -4,15 +4,12 @@ import com.runjing.learn_runjing.spring.SpringHolder;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.ApplicationContextAware;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.context.ApplicationListener;
-import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.core.annotation.AnnotatedElementUtils;
 import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Component;
-import org.springframework.util.Assert;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,6 +20,7 @@ import java.util.List;
  * @project learn_runjing
  */
 @Component
+@ConditionalOnBean(SpringHolder.class)
 public class RpcProviderRegister implements BeanFactoryPostProcessor , ApplicationListener<ContextRefreshedEvent> {
 
     private ConfigurableListableBeanFactory configurableListableBeanFactory;
