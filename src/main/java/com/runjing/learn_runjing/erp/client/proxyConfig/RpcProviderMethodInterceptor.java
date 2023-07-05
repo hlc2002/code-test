@@ -1,5 +1,6 @@
 package com.runjing.learn_runjing.erp.client.proxyConfig;
 
+import com.runjing.learn_runjing.spring.SpringHolder;
 import lombok.extern.slf4j.Slf4j;
 import org.aopalliance.aop.Advice;
 import org.aopalliance.intercept.MethodInterceptor;
@@ -23,6 +24,10 @@ public class RpcProviderMethodInterceptor implements MethodInterceptor, Advice {
     @Nullable
     @Override
     public Object invoke(@Nonnull MethodInvocation invocation) throws Throwable {
-        return null;
+        RpcProviderFactoryBean rpcProviderFactoryBean = (RpcProviderFactoryBean) SpringHolder.getApplicationContext().getBean("&"+invocation.getMethod().getDeclaringClass().getName());
+        Object proxyBean = SpringHolder.getApplicationContext().getBean(rpcProviderFactoryBean.getProxyBeanName());
+        Method currentMethod = invocation.getMethod();
+        Method proxyMethod = proxyBean.getClass().getMethod(currentMethod.getName(), currentMethod.getParameterTypes());
+        return proxyMethod.invoke(proxyBean, invocation.getArguments());
     }
 }
