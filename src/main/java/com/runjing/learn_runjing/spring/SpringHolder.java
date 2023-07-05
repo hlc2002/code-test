@@ -35,6 +35,10 @@ public class SpringHolder implements ApplicationContextAware, DisposableBean, Ap
         SpringHolder.applicationContext = applicationContext;
     }
 
+    public static ApplicationContext getApplicationContext() {
+        return applicationContext;
+    }
+
     @Override
     public void publishEvent(@NonNull Object event) {
         assertApplicationContextNonNull();
@@ -63,6 +67,7 @@ public class SpringHolder implements ApplicationContextAware, DisposableBean, Ap
         assertApplicationContextNonNull();
         return (T)  applicationContext.getBean(beanName);
     }
+
     private  static void assertApplicationContextNonNull(){
         if(Objects.isNull(applicationContext)){
             throw new RuntimeException("容器上下文透传感知接受异常");
