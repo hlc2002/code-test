@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @Slf4j
 public class ErpControllerAdvice {
 
-    @ExceptionHandler(RuntimeException.class)
-    public void handleException(RuntimeException e) {
+    @ExceptionHandler(RunJingException.class)
+    public void handleException(RunJingException e) {
         log.error(e.getMessage());
     }
 }
