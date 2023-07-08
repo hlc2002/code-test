@@ -27,10 +27,11 @@ import java.util.Map;
         matchIfMissing = true
 )
 public class DataSourceConfiguration {
+
     @Bean(name= DataSourceType.WRITE)
     @Qualifier(DataSourceType.WRITE)
     @ConfigurationProperties("spring.datasource.druid.write")
-    public DruidDataSource wirteDruidDataSource(){
+    public DruidDataSource writeDruidDataSource(){
         return DruidDataSourceBuilder.create().build();
     }
 
@@ -47,16 +48,17 @@ public class DataSourceConfiguration {
 //    public DruidDataSource localDataSource() {
 //        return DruidDataSourceBuilder.create().build();
 //    }
+
     @Bean
     @Primary
     public DynamicDataSource dynamicDataSource()
     {
         Map<Object, Object> dataSourceMap = new HashMap<>(2);
-        dataSourceMap.put(DataSourceType.WRITE,wirteDruidDataSource());
+        dataSourceMap.put(DataSourceType.WRITE,writeDruidDataSource());
         dataSourceMap.put(DataSourceType.READ,readDruidDataSource());
 //        dataSourceMap.put(DataSourceType.LOCAL,localDataSource());
         DynamicDataSource dynamicDataSource = new DynamicDataSource();
-        dynamicDataSource.setDefaultTargetDataSource(wirteDruidDataSource());
+        dynamicDataSource.setDefaultTargetDataSource(writeDruidDataSource());
         dynamicDataSource.setTargetDataSources(dataSourceMap);
         return dynamicDataSource;
     }
