@@ -1,5 +1,6 @@
 package com.runjing.learn_runjing;
 
+import cn.soboys.restapispringbootstarter.annotation.EnableRestFullApi;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
@@ -19,6 +20,7 @@ import org.springframework.transaction.support.TransactionTemplate;
 @EnableAsync
 @EnableAspectJAutoProxy
 @EnableCaching
+@EnableRestFullApi
 public class LearnRunjingApplication {
 
     public static void main(String[] args) {
