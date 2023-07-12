@@ -19,15 +19,11 @@ import java.util.List;
  * @project learn_runjing
  */
 @RestController
-@RequestMapping("/rpc/erp/inventoryCore/")
-@CrossOrigin
 @Slf4j
 public class ErpInventoryCoreController {
     @Resource
     private ErpInventoryCoreService inventoryCoreService;
 
-    @GetMapping("/get/{id}")
-    @ResponseBody
     public BaseResponse<ErpInventoryCore> getErpInventoryCoreList(@PathVariable("id")Long id){
         log.info("/rpc/erp/inventoryCore/get/"+id);
         Assert.notNull(id,"参数id为空");
