@@ -1,17 +1,13 @@
 package com.runjing.learn_runjing.erp.controller;
 
-import cn.soboys.restapispringbootstarter.Result;
+
 import com.runjing.learn_runjing.erp.domain.ErpInventoryCore;
 import com.runjing.learn_runjing.erp.service.ErpInventoryCoreService;
 import com.runjing.learn_runjing.general.BaseResponse;
-import com.runjing.learn_runjing.rocketmq.MessageProducer;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.util.Assert;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
-
 
 /**
  * @author forestSpringH

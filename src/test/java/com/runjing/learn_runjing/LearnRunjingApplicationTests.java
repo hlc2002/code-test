@@ -2,6 +2,7 @@ package com.runjing.learn_runjing;
 
 import com.runjing.learn_runjing.erp.service.ErpInventoryCoreService;
 import com.runjing.learn_runjing.redis.util.RedisUtil;
+import com.runjing.learn_runjing.utils.AddressAndCodeFiltration;
 import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -10,6 +11,9 @@ import org.springframework.data.geo.Point;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.springframework.test.util.AssertionErrors.fail;
 
 @SpringBootTest
 class LearnRunjingApplicationTests {
@@ -55,6 +59,39 @@ class LearnRunjingApplicationTests {
         Map<String, Point> neighborhoodMap = redisUtil.getNeighborhoodMap("erp", 12.0, 12.0, 10000.0);
         System.out.println(neighborhoodMap);
         redisUtil.removeGeo("erp");
+    }
+
+    @Test
+    public void testGetResultString() {
+        // 测试输入包含市、区和京东酒世界的字符串
+        assertEquals("朝阳区BJS000001京东酒世界", AddressAndCodeFiltration.getResultString("北京市朝阳区BJS000001京东酒世界"));
+
+        // 测试输入包含市、县和京东酒世界的字符串
+        assertEquals("朝阳县BJS000001京东酒世界", AddressAndCodeFiltration.getResultString("北京市朝阳县BJS000001京东酒世界"));
+
+        // 测试输入包含市和京东酒世界的字符串，但不包含区或县
+        assertEquals("朝阳区BJS000001京东酒世界", AddressAndCodeFiltration.getResultString("北京市朝阳区BJS000001京东酒世界"));
+
+        // 测试输入包含州和京东酒世界的字符串
+        assertEquals("BJS000001京东酒世界", AddressAndCodeFiltration.getResultString("北京州BJS000001京东酒世界"));
+
+        // 测试输入仅含京东酒世界的字符串
+        assertEquals("BJS000001", AddressAndCodeFiltration.getResultString("BJS000001京东酒世界"));
+
+        // 测试输入只有空格的字符串
+        try {
+            AddressAndCodeFiltration.getResultString("   ");
+            fail("Expected a RuntimeException to be thrown");
+        } catch (RuntimeException e) {
+            assertEquals("入参workHouseNameAndCode不符合处理格式！", e.getMessage());
+        }
+
+        // 测试输入一串无意义的字符串
+        try {
+            AddressAndCodeFiltration.getResultString("ssssss");
+        } catch (RuntimeException e) {
+            assertEquals("入参workHouseNameAndCode不符合处理格式！", e.getMessage());
+        }
     }
 
 }
