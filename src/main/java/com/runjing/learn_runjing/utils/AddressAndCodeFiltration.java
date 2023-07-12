@@ -34,17 +34,4 @@ public class AddressAndCodeFiltration {
             return trimHandle.replace(JSJ, "");
         }
     }
-
-    public static void main(String[] args) {
-        System.out.println(getResultString("北京市朝阳区BJS000001京东酒世界"));
-        System.out.println(getResultString("北京朝阳区BJS000001京东酒世界"));
-        System.out.println(getResultString("北京市朝阳县BJS000001京东酒世界"));
-        System.out.println(getResultString("北京州BJS000001京东酒世界"));
-        System.out.println(getResultString("BJS000001京东酒世界"));
-        System.out.println(getResultString("     BJS000001京东酒世界   "));
-        System.out.println(getResultString("BJS000001   京  东酒  世界"));
-        System.out.println(getResultString("        "));
-        System.out.println(getResultString("  ss   sss    "));
-
-    }
 }
