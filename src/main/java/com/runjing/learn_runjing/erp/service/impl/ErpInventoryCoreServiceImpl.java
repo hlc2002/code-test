@@ -3,6 +3,7 @@ package com.runjing.learn_runjing.erp.service.impl;
 import com.runjing.learn_runjing.erp.domain.ErpInventoryCore;
 import com.runjing.learn_runjing.erp.mapper.ErpInventoryCoreMapper;
 import com.runjing.learn_runjing.erp.service.ErpInventoryCoreService;
+import com.runjing.learn_runjing.general.BaseResponse;
 import jakarta.annotation.Resource;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
@@ -54,11 +55,11 @@ public class ErpInventoryCoreServiceImpl implements ErpInventoryCoreService {
     }
 
     @Override
-    public ErpInventoryCore getErpInventoryCoreById(Long id) {
+    public BaseResponse<ErpInventoryCore> getErpInventoryCoreById(Long id) {
         if (Objects.isNull(id)){
             throw new RuntimeException("id为空");
         }
-        return erpInventoryCoreMapper.getErpInventoryCore(id);
+        return BaseResponse.success("",erpInventoryCoreMapper.getErpInventoryCore(id));
     }
 
     @Override

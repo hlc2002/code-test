@@ -1,5 +1,6 @@
 package com.runjing.learn_runjing.utils;
 
+import com.runjing.learn_runjing.erp.config.RunJingException;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 
@@ -18,18 +19,22 @@ public class AddressAndCodeFiltration {
 
     public static String getResultString(String workHouseNameAndCode) {
         if (StringUtils.isBlank(workHouseNameAndCode)) {
-            log.error("入参workHouseNameAndCode:{}", workHouseNameAndCode);
-            throw new RuntimeException("入参workHouseNameAndCode不符合处理格式！");
+            log.error("入参workHouseNameAndCode不符合处理格式:{}", workHouseNameAndCode);
+            throw new RunJingException("入参workHouseNameAndCode不符合处理格式！");
         } else {
             String trimHandle = workHouseNameAndCode.replace(" ","");
             if ((trimHandle.contains(SHI) && (trimHandle.contains(XIAN) || trimHandle.contains(QU))) || (trimHandle.contains(ZHOU))) {
-                int i;
+                int i = 1;
                 if (trimHandle.contains(SHI)) {
-                    i = trimHandle.indexOf(SHI) + 1;
+                    i += trimHandle.indexOf(SHI);
                 } else {
-                    i = trimHandle.indexOf(ZHOU) + 1;
+                    i += trimHandle.indexOf(ZHOU);
                 }
                 return trimHandle.substring(i);
+            }
+            if (!trimHandle.contains(JSJ)){
+                log.error("入参workHouseNameAndCode无意义门店地址名称字符串:{}",workHouseNameAndCode);
+                throw new RunJingException("入参workHouseNameAndCode无意义门店地址名称字符串");
             }
             return trimHandle.replace(JSJ, "");
         }

@@ -1,6 +1,7 @@
 package com.runjing.learn_runjing.erp.service;
 
 import com.runjing.learn_runjing.erp.domain.ErpInventoryCore;
+import com.runjing.learn_runjing.general.BaseResponse;
 
 import java.util.List;
 
@@ -12,7 +13,7 @@ import java.util.List;
 public interface ErpInventoryCoreService {
     List<ErpInventoryCore> getErpInventoryCoreList(Integer size);
 
-    ErpInventoryCore getErpInventoryCoreById(Long id);
+    BaseResponse getErpInventoryCoreById(Long id);
 
     List<ErpInventoryCore> getBatchInventoryCoreList(List<Long> list);
 }

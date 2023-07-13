@@ -13,7 +13,6 @@ public class RunJingException extends RuntimeException{
     private int exceptionCode;
     private String exceptionMsg;
     private String exceptionAddress;
-
     public RunJingException(String exceptionMsg){
         super(exceptionMsg);
     }

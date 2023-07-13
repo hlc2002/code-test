@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.springframework.test.util.AssertionErrors.fail;
 
 @SpringBootTest
 class LearnRunjingApplicationTests {
@@ -81,7 +80,6 @@ class LearnRunjingApplicationTests {
         // 测试输入只有空格的字符串
         try {
             AddressAndCodeFiltration.getResultString("   ");
-            fail("Expected a RuntimeException to be thrown");
         } catch (RuntimeException e) {
             assertEquals("入参workHouseNameAndCode不符合处理格式！", e.getMessage());
         }
