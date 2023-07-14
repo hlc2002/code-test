@@ -19,6 +19,7 @@ public class RedissonConfiguration {
 
     @Value("${spring.data.redis.host}")
     private String redisHost;
+
     @Bean(destroyMethod = "shutdown",name = "redisson")
     @Scope(value = ConfigurableBeanFactory.SCOPE_SINGLETON)
     public RedissonClient redisson() {

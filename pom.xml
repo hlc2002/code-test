@@ -13,15 +13,19 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>learn_runjing</name>
     <description>learn_runjing</description>
+
     <properties>
         <java.version>8</java.version>
+        <runjing.version>1.0.1-RELEASES</runjing.version>
+        <soboys.version>1.5.0</soboys.version>
+        <mybatis.version>3.0.2</mybatis.version>
     </properties>
     <dependencies>
         <!--restful自动依赖配置包-->
         <dependency>
             <groupId>cn.soboys</groupId>
             <artifactId>rest-api-spring-boot-starter</artifactId>
-            <version>1.5.0</version>
+            <version>${soboys.version}</version>
         </dependency>
         <!--springweb依赖-->
         <dependency>
@@ -36,7 +40,7 @@
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>3.0.2</version>
+            <version>${mybatis.version}</version>
         </dependency>
         <dependency>
             <groupId>com.mysql</groupId>
@@ -126,6 +130,11 @@
             <groupId>org.redisson</groupId>
             <artifactId>redisson</artifactId>
             <version>3.15.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.runjing.user</groupId>
+            <artifactId>runjing-user-client</artifactId>
+            <version>${runjing.version}</version>
         </dependency>
     </dependencies>
 

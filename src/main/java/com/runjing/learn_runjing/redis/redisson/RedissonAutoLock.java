@@ -13,9 +13,8 @@ import java.lang.annotation.*;
 @Inherited
 public @interface RedissonAutoLock {
     long  id();
-    String lockMethodAndCurrentTime();
-    int waitTime() default 3;
-    long expireTime() default 3000;
+    long waitTime();
+    long expireTime() default 10;
     String description() default "";
     boolean assembleUserInfo() default false;
 }
