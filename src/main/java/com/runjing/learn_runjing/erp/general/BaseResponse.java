@@ -1,6 +1,5 @@
-package com.runjing.learn_runjing.general;
+package com.runjing.learn_runjing.erp.general;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 

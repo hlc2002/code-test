@@ -51,14 +51,4 @@ public class FieldUtil {
         private String name;
         public static final Map<String, Class<?>> ENUM_MAP = Arrays.stream(DataType.values()).collect(Collectors.toMap(DataType::getName, DataType::getType));
     }
-
-    public static void main(String[] args) {
-        int num = 1;
-        System.out.println(getFieldMap(Person.class));
-    }
-
-    class Person {
-        private String name;
-        private int age;
-    }
 }

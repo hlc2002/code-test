@@ -1,4 +1,4 @@
-package com.runjing.learn_runjing.general;
+package com.runjing.learn_runjing.erp.general;
 
 /**
  * @author forestSpringH

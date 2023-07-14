@@ -1,4 +1,4 @@
-package com.runjing.learn_runjing.functionInterface;
+package com.runjing.learn_runjing.erp.functionInterface;
 
 /**
  * @author forestSpringH

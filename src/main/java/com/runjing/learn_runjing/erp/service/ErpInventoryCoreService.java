@@ -1,7 +1,7 @@
 package com.runjing.learn_runjing.erp.service;
 
 import com.runjing.learn_runjing.erp.domain.ErpInventoryCore;
-import com.runjing.learn_runjing.general.BaseResponse;
+import com.runjing.learn_runjing.erp.general.BaseResponse;
 
 import java.util.List;
 
