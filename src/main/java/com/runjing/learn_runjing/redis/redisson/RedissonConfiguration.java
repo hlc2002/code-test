@@ -24,7 +24,7 @@ public class RedissonConfiguration {
     @Scope(value = ConfigurableBeanFactory.SCOPE_SINGLETON)
     public RedissonClient redisson() {
         Config config = new Config();
-        config.useSingleServer().setAddress("redis://"+redisHost);
+        config.useSingleServer().setAddress(redisHost);
         return Redisson.create(config);
     }
 }

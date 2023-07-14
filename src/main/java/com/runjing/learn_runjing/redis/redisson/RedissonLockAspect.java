@@ -9,6 +9,7 @@ import org.springframework.context.annotation.DependsOn;
 import org.springframework.stereotype.Component;
 
 import java.lang.reflect.Method;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author forestSpringH
@@ -24,20 +25,41 @@ public class RedissonLockAspect {
     private RedissonLockService redissonLockService;
 
     @Pointcut("@annotation(com.runjing.learn_runjing.redis.redisson.RedissonAutoLock)")
-    public void pointcut(){}
+    public void pointcut() {
+    }
 
     @Around("pointcut()")
-    public Object lock(ProceedingJoinPoint joinPoint){
+    public void lock(ProceedingJoinPoint joinPoint) {
         MethodSignature signature = (MethodSignature) joinPoint.getSignature();
         Method method = signature.getMethod();
         RedissonAutoLock redissonAutoLock = method.getAnnotation(RedissonAutoLock.class);
         long waitTime = redissonAutoLock.waitTime();
         long expireTime = redissonAutoLock.expireTime();
-        boolean assembleUserInfo = redissonAutoLock.assembleUserInfo();
         long id = redissonAutoLock.id();
-
-
-        return redissonAutoLock;
+        String key = id + method.getName();
+        try {
+            redissonLockService.lock(key, expireTime);
+            try {
+                joinPoint.proceed();
+            } catch (Throwable e) {
+                throw new RuntimeException(e);
+            } finally {
+                redissonLockService.unlock(key);
+            }
+        } catch (Exception e) {
+            Boolean tryLock = redissonLockService.tryLock(key, waitTime, expireTime, TimeUnit.SECONDS);
+            if (tryLock) {
+                try {
+                    joinPoint.proceed();
+                } catch (Throwable ex) {
+                    throw new RuntimeException(ex);
+                } finally {
+                    redissonLockService.unlock(key);
+                }
+            }
+        } finally {
+            redissonLockService.unlock(key);
+        }
     }
 
     @AfterReturning("pointcut()")
