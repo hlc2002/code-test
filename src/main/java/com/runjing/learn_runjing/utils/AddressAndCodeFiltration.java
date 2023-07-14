@@ -20,7 +20,7 @@ public class AddressAndCodeFiltration {
     public static String getResultString(String workHouseNameAndCode) {
         if (StringUtils.isBlank(workHouseNameAndCode)) {
             log.error("入参workHouseNameAndCode不符合处理格式:{}", workHouseNameAndCode);
-            throw new RunJingException("入参workHouseNameAndCode不符合处理格式！");
+            return workHouseNameAndCode;
         } else {
             String trimHandle = workHouseNameAndCode.replace(" ","");
             if ((trimHandle.contains(SHI) && (trimHandle.contains(XIAN) || trimHandle.contains(QU))) || (trimHandle.contains(ZHOU))) {
@@ -34,7 +34,7 @@ public class AddressAndCodeFiltration {
             }
             if (!trimHandle.contains(JSJ)){
                 log.error("入参workHouseNameAndCode无意义门店地址名称字符串:{}",workHouseNameAndCode);
-                throw new RunJingException("入参workHouseNameAndCode无意义门店地址名称字符串");
+                return trimHandle.substring(0,11);
             }
             return trimHandle.replace(JSJ, "");
         }

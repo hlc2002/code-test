@@ -13,7 +13,7 @@ import java.util.List;
 public interface ErpInventoryCoreService {
     List<ErpInventoryCore> getErpInventoryCoreList(Integer size);
 
-    BaseResponse getErpInventoryCoreById(Long id);
+    BaseResponse<ErpInventoryCore> getErpInventoryCoreById(Long id);
 
     List<ErpInventoryCore> getBatchInventoryCoreList(List<Long> list);
 }
