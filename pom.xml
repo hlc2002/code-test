@@ -27,7 +27,7 @@
             <artifactId>rest-api-spring-boot-starter</artifactId>
             <version>${soboys.version}</version>
         </dependency>
-        <!--springweb依赖-->
+        <!--spring web依赖-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jdbc</artifactId>
@@ -131,10 +131,15 @@
             <artifactId>redisson</artifactId>
             <version>3.15.5</version>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.runjing</groupId>-->
+<!--            <artifactId>runjing-redisson-autoLock-boot-starter</artifactId>-->
+<!--            <version>0.0.1-SNAPSHOT</version>-->
+<!--        </dependency>-->
         <dependency>
-            <groupId>com.runjing.user</groupId>
-            <artifactId>runjing-user-client</artifactId>
-            <version>${runjing.version}</version>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
