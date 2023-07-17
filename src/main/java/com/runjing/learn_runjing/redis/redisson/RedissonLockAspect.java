@@ -20,7 +20,6 @@ import java.util.concurrent.TimeUnit;
 @Component
 @DependsOn({"RedissonLockService"})
 public class RedissonLockAspect {
-
     @Resource
     private RedissonLockService redissonLockService;
 

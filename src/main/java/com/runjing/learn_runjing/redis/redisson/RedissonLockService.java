@@ -27,8 +27,31 @@ public class RedissonLockService {
         return lock(key, 10L);
     }
 
+
+    public <T> T lock(String key,long expireTime,LockExecutor<T> executor){
+        this.lock(key,expireTime);
+        T var;
+        try{
+            var = executor.execute();
+        }finally {
+            this.unlock(key);
+        }
+        return var;
+    }
+
     public Boolean redLock(String key) {
         return redLock(key, 10L);
+    }
+
+    public <T> T redLock(String key,long expireTime,LockExecutor<T> executor){
+        this.redLock(key, expireTime);
+        T var;
+        try{
+            var = executor.execute();
+        }finally {
+            this.redUnlock(key);
+        }
+        return var;
     }
 
     public Boolean lock(String key, Long expireTime) {
