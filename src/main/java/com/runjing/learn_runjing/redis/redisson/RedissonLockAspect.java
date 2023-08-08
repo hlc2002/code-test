@@ -35,7 +35,7 @@ public class RedissonLockAspect {
         long waitTime = redissonAutoLock.waitTime();
         long expireTime = redissonAutoLock.expireTime();
         long id = redissonAutoLock.id();
-        String key = id + method.getName();
+        String key = id + method.getName() + method.getReturnType() + System.currentTimeMillis();
         try {
             redissonLockService.lock(key, expireTime);
             try {

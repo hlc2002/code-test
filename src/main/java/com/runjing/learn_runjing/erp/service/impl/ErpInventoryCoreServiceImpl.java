@@ -4,6 +4,7 @@ import com.runjing.learn_runjing.erp.domain.ErpInventoryCore;
 import com.runjing.learn_runjing.erp.general.BaseResponse;
 import com.runjing.learn_runjing.erp.mapper.ErpInventoryCoreMapper;
 import com.runjing.learn_runjing.erp.service.ErpInventoryCoreService;
+import com.runjing.learn_runjing.redis.redisson.RedissonAutoLock;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.cursor.Cursor;
@@ -16,6 +17,7 @@ import org.springframework.util.CollectionUtils;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.Optional;
 
 /**
 * @author admin
@@ -53,11 +55,12 @@ public class ErpInventoryCoreServiceImpl implements ErpInventoryCoreService {
     }
 
     @Override
+    @RedissonAutoLock
     public BaseResponse<ErpInventoryCore> getErpInventoryCoreById(Long id) {
         if (Objects.isNull(id)){
             throw new RuntimeException("id为空");
         }
-        return BaseResponse.success("",erpInventoryCoreMapper.getErpInventoryCore(id));
+        return BaseResponse.success("", Optional.ofNullable(erpInventoryCoreMapper.getErpInventoryCore(id)).orElse(null));
     }
 
     @Override

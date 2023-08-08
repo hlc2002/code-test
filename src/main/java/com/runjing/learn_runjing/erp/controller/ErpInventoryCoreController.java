@@ -1,7 +1,6 @@
 package com.runjing.learn_runjing.erp.controller;
 
 
-import com.runjing.learn_runjing.erp.client.api.ErpInventoryCoreClient;
 import com.runjing.learn_runjing.erp.domain.ErpInventoryCore;
 import com.runjing.learn_runjing.erp.general.BaseResponse;
 import com.runjing.learn_runjing.erp.service.ErpInventoryCoreService;
@@ -19,10 +18,10 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @Slf4j
-public class ErpInventoryCoreController implements ErpInventoryCoreClient {
+public class ErpInventoryCoreController {
     @Resource
     private ErpInventoryCoreService inventoryCoreService;
-    @Override
+
     public BaseResponse<ErpInventoryCore> getErpInventoryCoreList(@PathVariable("id")Long id){
         log.info("/rpc/erp/inventoryCore/get/"+id);
         Assert.notNull(id,"参数id为空");
