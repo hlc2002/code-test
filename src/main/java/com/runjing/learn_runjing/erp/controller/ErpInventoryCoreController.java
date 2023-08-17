@@ -22,8 +22,8 @@ public class ErpInventoryCoreController {
     @Resource
     private ErpInventoryCoreService inventoryCoreService;
 
-    public BaseResponse<ErpInventoryCore> getErpInventoryCoreList(@PathVariable("id")Long id){
-        log.info("/rpc/erp/inventoryCore/get/"+id);
+    public BaseResponse<ErpInventoryCore> getErpInventoryCore(@PathVariable("id")Long id){
+        log.info("object:{},url:/rpc/erp/inventoryCore/get/{}",this,id);
         Assert.notNull(id,"参数id为空");
         return inventoryCoreService.getErpInventoryCoreById(id);
     }

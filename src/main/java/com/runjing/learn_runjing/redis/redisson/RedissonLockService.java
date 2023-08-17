@@ -63,13 +63,14 @@ public class RedissonLockService {
             RLock lock = redisson.getLock(key);
             if (lock.isLocked()) {
                 log.info("锁：{}已被获取，当前请求阻塞",key);
-                return Boolean.TRUE;
+                return Boolean.FALSE;
             }
+            log.info("获取锁：{}",key);
             lock.lock(expireTime, TimeUnit.SECONDS);
             return true;
         } catch (Exception e) {
             log.warn("获取锁异常");
-            return Boolean.TRUE;
+            return Boolean.FALSE;
         }
     }
 
@@ -97,7 +98,7 @@ public class RedissonLockService {
             RLock lock = redisson.getLock(key);
             if (lock.isLocked()) {
                 log.info("锁：{}已被获取，当前请求阻塞",key);
-                return Boolean.TRUE;
+                return Boolean.FALSE;
             }
             return lock.tryLock(waitTime,timeout,unit);
         }catch(Exception e){

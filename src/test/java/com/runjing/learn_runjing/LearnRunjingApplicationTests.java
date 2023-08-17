@@ -1,12 +1,17 @@
 package com.runjing.learn_runjing;
 
+import com.runjing.learn_runjing.erp.controller.ErpInventoryCoreController;
+import com.runjing.learn_runjing.erp.domain.ErpInventoryCore;
+import com.runjing.learn_runjing.erp.general.BaseResponse;
 import com.runjing.learn_runjing.erp.service.ErpInventoryCoreService;
 import com.runjing.learn_runjing.redis.util.RedisUtil;
 import com.runjing.learn_runjing.utils.AddressAndCodeFiltration;
 import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.geo.Point;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -23,6 +28,24 @@ class LearnRunjingApplicationTests {
 
     @Resource
     private ErpInventoryCoreService erpInventoryCoreService;
+
+    @Resource
+    private ErpInventoryCoreController erpInventoryCoreController;
+
+    @Resource
+    @Qualifier("ThreadPool")
+    private ThreadPoolTaskExecutor threadPoolTaskExecutor;
+
+    @Test
+    public void testLock(){
+        Long id = 1L;
+        threadPoolTaskExecutor.execute(() -> {
+            BaseResponse<ErpInventoryCore> erpInventoryCore = erpInventoryCoreController.getErpInventoryCore(id);
+            System.out.println(erpInventoryCore);
+        });
+        BaseResponse<ErpInventoryCore> erpInventoryCore = erpInventoryCoreController.getErpInventoryCore(id);
+        System.out.println(erpInventoryCore);
+    }
 
     @Test
     public void testCursor() {

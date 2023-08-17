@@ -17,7 +17,6 @@ import org.springframework.util.CollectionUtils;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
-import java.util.Optional;
 
 /**
 * @author admin
@@ -60,7 +59,12 @@ public class ErpInventoryCoreServiceImpl implements ErpInventoryCoreService {
         if (Objects.isNull(id)){
             throw new RuntimeException("id为空");
         }
-        return BaseResponse.success("", Optional.ofNullable(erpInventoryCoreMapper.getErpInventoryCore(id)).orElse(null));
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        return BaseResponse.success("", erpInventoryCoreMapper.getErpInventoryCore(id));
     }
 
     @Override

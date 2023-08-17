@@ -7,6 +7,8 @@ import ma.glasnost.orika.impl.DefaultMapperFactory;
 import java.util.List;
 import java.util.Objects;
 import java.util.ServiceLoader;
+import java.util.stream.Stream;
+import java.util.stream.StreamSupport;
 
 /**
  * @author forestSpringH
@@ -22,7 +24,8 @@ public class BeanCopyHandler {
         MAPPER_FACADE = MAPPER_FACTORY.getMapperFacade();
 
         ServiceLoader<CopyInterface> serviceLoader = ServiceLoader.load(CopyInterface.class);
-        serviceLoader.stream().filter(Objects::nonNull).forEach(element -> element.get().register(MAPPER_FACTORY));
+        Stream<CopyInterface> stream = StreamSupport.stream(serviceLoader.spliterator(), true);
+        stream.filter(Objects::nonNull).forEach(element -> element.register(MAPPER_FACTORY));
     }
 
     public static <S,T> T map(S source, Class<T> targetClass){

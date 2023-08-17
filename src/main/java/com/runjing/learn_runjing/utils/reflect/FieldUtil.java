@@ -4,11 +4,10 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.springframework.util.Assert;
-import org.springframework.util.CollectionUtils;
 
-import java.lang.reflect.Field;
 import java.time.LocalDateTime;
-import java.util.*;
+import java.util.Arrays;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
@@ -18,18 +17,18 @@ import java.util.stream.Collectors;
  */
 public class FieldUtil {
 
-    public static Map<String, String> getFieldMap(Class<?> dataType) {
-        Assert.notNull(dataType, "入参字节码文件为null，拒绝访问");
-        Map<String, String> result = new HashMap<>();
-        List<Field> declaredFields = List.of(dataType.getDeclaredFields());
-        if (CollectionUtils.isEmpty(declaredFields)) {
-            return result;
-        }
-        declaredFields.forEach(field ->
-                result.put(field.getName(), field.getType().getSimpleName())
-        );
-        return result;
-    }
+//    public static Map<String, String> getFieldMap(Class<?> dataType) {
+//        Assert.notNull(dataType, "入参字节码文件为null，拒绝访问");
+//        Map<String, String> result = new HashMap<>();
+//        List<Field> declaredFields = List.of(dataType.getDeclaredFields());
+//        if (CollectionUtils.isEmpty(declaredFields)) {
+//            return result;
+//        }
+//        declaredFields.forEach(field ->
+//                result.put(field.getName(), field.getType().getSimpleName())
+//        );
+//        return result;
+//    }
 
     public static Class<?> getDataType(String dataType) {
         Assert.notNull(dataType, "入参描述数据类型字符串为nll，拒绝访问");
