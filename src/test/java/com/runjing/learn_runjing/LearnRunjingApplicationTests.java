@@ -39,10 +39,10 @@ class LearnRunjingApplicationTests {
     @Test
     public void testLock(){
         Long id = 1L;
-        threadPoolTaskExecutor.execute(() -> {
-            BaseResponse<ErpInventoryCore> erpInventoryCore = erpInventoryCoreController.getErpInventoryCore(id);
-            System.out.println(erpInventoryCore);
-        });
+//        threadPoolTaskExecutor.execute(() -> {
+//            BaseResponse<ErpInventoryCore> erpInventoryCore = erpInventoryCoreController.getErpInventoryCore(id);
+//            System.out.println(erpInventoryCore);
+//        });
         BaseResponse<ErpInventoryCore> erpInventoryCore = erpInventoryCoreController.getErpInventoryCore(id);
         System.out.println(erpInventoryCore);
     }

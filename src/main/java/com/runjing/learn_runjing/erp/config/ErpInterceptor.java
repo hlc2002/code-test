@@ -1,10 +1,10 @@
 package com.runjing.learn_runjing.erp.config;
 
+import com.hlc.idempotentboot.jar.before.ThreadLocalData;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
-import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
 /**
@@ -14,20 +14,20 @@ import org.springframework.web.servlet.ModelAndView;
  */
 @Component
 @Slf4j
-public class ErpInterceptor implements HandlerInterceptor {
-    @Override
+public class ErpInterceptor extends ThreadLocalData  {
+
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         log.info(System.currentTimeMillis()+": 请求接收");
-        return HandlerInterceptor.super.preHandle(request, response, handler);
+        return super.preHandle(request, response, handler);
     }
 
-    @Override
+
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
-        HandlerInterceptor.super.postHandle(request, response, handler, modelAndView);
+        super.postHandle(request, response, handler, modelAndView);
     }
 
-    @Override
+
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
-        HandlerInterceptor.super.afterCompletion(request, response, handler, ex);
+        super.afterCompletion(request, response, handler, ex);
     }
 }

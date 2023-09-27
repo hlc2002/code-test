@@ -1,6 +1,7 @@
 package com.runjing.learn_runjing.erp.controller;
 
 
+import com.hlc.idempotentboot.jar.annotation.IdempotentValid;
 import com.runjing.learn_runjing.erp.domain.ErpInventoryCore;
 import com.runjing.learn_runjing.erp.general.BaseResponse;
 import com.runjing.learn_runjing.erp.service.ErpInventoryCoreService;
@@ -22,10 +23,10 @@ public class ErpInventoryCoreController {
     @Resource
     private ErpInventoryCoreService inventoryCoreService;
 
+    @IdempotentValid(methodPath = "getErpInventoryCore")
     public BaseResponse<ErpInventoryCore> getErpInventoryCore(@PathVariable("id")Long id){
         log.info("object:{},url:/rpc/erp/inventoryCore/get/{}",this,id);
         Assert.notNull(id,"参数id为空");
         return inventoryCoreService.getErpInventoryCoreById(id);
     }
-
 }

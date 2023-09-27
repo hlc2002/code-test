@@ -1,0 +1,264 @@
+2023-08-17 11:38:07 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 8.0.0.Final
+2023-08-17 11:38:07 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Starting LearnRunjingApplicationTests using Java 20.0.1 with PID 18072 (started by admin in D:\code_git_repo_forestSpringH\learn_runjing)
+2023-08-17 11:38:07 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests No active profile set, falling back to 1 default profile: "default"
+2023-08-17 11:40:16 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-17 11:40:16 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-08-17 11:40:16 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 114 ms. Found 0 JDBC repository interfaces.
+2023-08-17 11:40:17 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-17 11:40:17 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-17 11:40:17 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 51 ms. Found 0 Redis repository interfaces.
+2023-08-17 11:40:20 INFO  main org.redisson.Version Redisson 3.15.5
+2023-08-17 11:40:20 INFO  redisson-netty-2-23 org.redisson.connection.pool.MasterPubSubConnectionPool 1 connections initialized for /172.16.3.170:6379
+2023-08-17 11:40:20 INFO  redisson-netty-2-21 org.redisson.connection.pool.MasterConnectionPool 24 connections initialized for /172.16.3.170:6379
+2023-08-17 11:40:23 INFO  main com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2023-08-17 11:40:23 INFO  main com.runjing.learn_runjing.spring.SpringHolder 容器事件监听者收到事件：org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.web.context.support.GenericWebApplicationContext@f4cfd90, started on Thu Aug 17 11:38:07 CST 2023]
+2023-08-17 11:40:23 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Started LearnRunjingApplicationTests in 137.031 seconds (process running for 139.835)
+2023-08-17 11:40:24 INFO  main com.runjing.learn_runjing.erp.controller.ErpInventoryCoreController /rpc/erp/inventoryCore/get/1
+2023-08-17 11:40:24 INFO  main com.runjing.learn_runjing.dataSource.DynamicDataSourceHolder 数据源切换为：READ
+2023-08-17 11:40:24 INFO  main com.runjing.learn_runjing.dataSource.DynamicDataSourceHolder 移除数据源：READ
+2023-08-17 11:40:24 INFO  SpringApplicationShutdownHook com.runjing.learn_runjing.spring.SpringHolder 容器事件监听者收到事件：org.springframework.context.event.ContextClosedEvent[source=org.springframework.web.context.support.GenericWebApplicationContext@f4cfd90, started on Thu Aug 17 11:38:07 CST 2023]
+2023-08-17 11:40:24 INFO  SpringApplicationShutdownHook com.runjing.learn_runjing.spring.SpringHolder 容器上下文透传感知接受销毁
+2023-08-17 11:40:24 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:9876] result: true
+2023-08-17 11:40:24 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.142:10921] result: true
+2023-08-17 11:40:24 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.143:10921] result: true
+2023-08-17 11:40:24 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:10921] result: true
+2023-08-17 11:40:24 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:10911] result: true
+2023-08-17 11:40:24 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.142:10911] result: true
+2023-08-17 11:40:24 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.143:10911] result: true
+2023-08-17 11:40:24 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closing ...
+2023-08-17 11:40:25 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closed
+2023-08-17 11:40:25 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-0} closing ...
+2023-08-17 11:51:54 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 8.0.0.Final
+2023-08-17 11:51:54 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Starting LearnRunjingApplicationTests using Java 20.0.1 with PID 24780 (started by admin in D:\code_git_repo_forestSpringH\learn_runjing)
+2023-08-17 11:51:54 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests No active profile set, falling back to 1 default profile: "default"
+2023-08-17 11:54:40 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-17 11:54:40 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-08-17 11:54:40 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 17 ms. Found 0 JDBC repository interfaces.
+2023-08-17 11:54:40 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-17 11:54:40 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-17 11:54:40 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-08-17 11:54:42 INFO  main org.redisson.Version Redisson 3.15.5
+2023-08-17 11:54:42 INFO  redisson-netty-2-14 org.redisson.connection.pool.MasterPubSubConnectionPool 1 connections initialized for /172.16.3.170:6379
+2023-08-17 11:54:42 INFO  redisson-netty-2-15 org.redisson.connection.pool.MasterConnectionPool 24 connections initialized for /172.16.3.170:6379
+2023-08-17 11:54:44 INFO  main com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2023-08-17 11:54:45 INFO  main com.runjing.learn_runjing.spring.SpringHolder 容器事件监听者收到事件：org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.web.context.support.GenericWebApplicationContext@64a4dd8d, started on Thu Aug 17 11:51:54 CST 2023]
+2023-08-17 11:54:45 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Started LearnRunjingApplicationTests in 171.35 seconds (process running for 172.934)
+2023-08-17 11:54:46 INFO  main com.runjing.learn_runjing.erp.controller.ErpInventoryCoreController /rpc/erp/inventoryCore/get/1
+2023-08-17 11:54:46 INFO  runjing-learn-1 com.runjing.learn_runjing.erp.controller.ErpInventoryCoreController /rpc/erp/inventoryCore/get/1
+2023-08-17 11:56:02 INFO  SpringApplicationShutdownHook com.runjing.learn_runjing.spring.SpringHolder 容器事件监听者收到事件：org.springframework.context.event.ContextClosedEvent[source=org.springframework.web.context.support.GenericWebApplicationContext@64a4dd8d, started on Thu Aug 17 11:51:54 CST 2023]
+2023-08-17 11:56:02 INFO  SpringApplicationShutdownHook com.runjing.learn_runjing.spring.SpringHolder 容器上下文透传感知接受销毁
+2023-08-17 11:56:02 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.143:10921] result: true
+2023-08-17 11:56:02 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:9876] result: true
+2023-08-17 11:56:02 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.142:10921] result: true
+2023-08-17 11:56:02 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.143:10911] result: true
+2023-08-17 11:56:02 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.142:10911] result: true
+2023-08-17 11:56:02 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:10911] result: true
+2023-08-17 11:56:02 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:10921] result: true
+2023-08-17 13:43:27 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 8.0.0.Final
+2023-08-17 13:43:27 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Starting LearnRunjingApplicationTests using Java 20.0.1 with PID 29472 (started by admin in D:\code_git_repo_forestSpringH\learn_runjing)
+2023-08-17 13:43:27 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests No active profile set, falling back to 1 default profile: "default"
+2023-08-17 13:43:53 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-17 13:43:53 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-08-17 13:43:53 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 16 ms. Found 0 JDBC repository interfaces.
+2023-08-17 13:43:53 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-17 13:43:53 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-17 13:43:53 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-08-17 13:43:55 INFO  main org.redisson.Version Redisson 3.15.5
+2023-08-17 13:43:56 INFO  redisson-netty-2-20 org.redisson.connection.pool.MasterPubSubConnectionPool 1 connections initialized for /172.16.3.170:6379
+2023-08-17 13:43:56 INFO  redisson-netty-2-15 org.redisson.connection.pool.MasterConnectionPool 24 connections initialized for /172.16.3.170:6379
+2023-08-17 13:43:58 INFO  main com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2023-08-17 13:43:58 INFO  main com.runjing.learn_runjing.spring.SpringHolder 容器事件监听者收到事件：org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.web.context.support.GenericWebApplicationContext@2dddc1b9, started on Thu Aug 17 13:43:27 CST 2023]
+2023-08-17 13:43:58 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Started LearnRunjingApplicationTests in 31.783 seconds (process running for 33.196)
+2023-08-17 13:44:55 INFO  main com.runjing.learn_runjing.erp.controller.ErpInventoryCoreController /rpc/erp/inventoryCore/get/1
+2023-08-17 13:44:55 INFO  runjing-learn-1 com.runjing.learn_runjing.erp.controller.ErpInventoryCoreController /rpc/erp/inventoryCore/get/1
+2023-08-17 13:44:55 INFO  runjing-learn-1 com.runjing.learn_runjing.redis.redisson.RedissonLockAspect 尝试锁：1getErpInventoryCoreByIdclass com.runjing.learn_runjing.erp.general.BaseResponse1692251095728，持有时间：10
+2023-08-17 13:44:55 INFO  main com.runjing.learn_runjing.redis.redisson.RedissonLockAspect 尝试锁：1getErpInventoryCoreByIdclass com.runjing.learn_runjing.erp.general.BaseResponse1692251095728，持有时间：10
+2023-08-17 13:44:55 INFO  SpringApplicationShutdownHook com.runjing.learn_runjing.spring.SpringHolder 容器事件监听者收到事件：org.springframework.context.event.ContextClosedEvent[source=org.springframework.web.context.support.GenericWebApplicationContext@2dddc1b9, started on Thu Aug 17 13:43:27 CST 2023]
+2023-08-17 13:44:55 INFO  SpringApplicationShutdownHook com.runjing.learn_runjing.spring.SpringHolder 容器上下文透传感知接受销毁
+2023-08-17 13:44:55 INFO  runjing-learn-1 com.runjing.learn_runjing.redis.redisson.RedissonLockAspect 释放锁：1getErpInventoryCoreByIdclass com.runjing.learn_runjing.erp.general.BaseResponse1692251095728
+2023-08-17 13:44:55 INFO  runjing-learn-1 com.runjing.learn_runjing.redis.redisson.RedissonLockService 锁：1getErpInventoryCoreByIdclass com.runjing.learn_runjing.erp.general.BaseResponse1692251095728释放
+2023-08-17 13:44:55 INFO  runjing-learn-1 com.runjing.learn_runjing.redis.redisson.RedissonLockAspect 重入锁：1getErpInventoryCoreByIdclass com.runjing.learn_runjing.erp.general.BaseResponse1692251095728，持有时间：10
+2023-08-17 13:44:55 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:9876] result: true
+2023-08-17 13:44:55 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.142:10921] result: true
+2023-08-17 13:44:55 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.143:10921] result: true
+2023-08-17 13:44:55 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:10911] result: true
+2023-08-17 13:44:55 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.142:10911] result: true
+2023-08-17 13:44:55 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:10921] result: true
+2023-08-17 13:44:55 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.143:10911] result: true
+2023-08-17 13:44:55 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closing ...
+2023-08-17 13:44:55 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closed
+2023-08-17 13:44:55 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-0} closing ...
+2023-08-17 13:46:51 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 8.0.0.Final
+2023-08-17 13:46:51 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Starting LearnRunjingApplicationTests using Java 20.0.1 with PID 29928 (started by admin in D:\code_git_repo_forestSpringH\learn_runjing)
+2023-08-17 13:46:51 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests No active profile set, falling back to 1 default profile: "default"
+2023-08-17 13:46:52 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-17 13:46:52 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-08-17 13:46:52 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 14 ms. Found 0 JDBC repository interfaces.
+2023-08-17 13:46:52 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-17 13:46:52 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-17 13:46:52 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-08-17 13:46:54 INFO  main org.redisson.Version Redisson 3.15.5
+2023-08-17 13:46:55 INFO  redisson-netty-2-13 org.redisson.connection.pool.MasterPubSubConnectionPool 1 connections initialized for /172.16.3.170:6379
+2023-08-17 13:46:55 INFO  redisson-netty-2-16 org.redisson.connection.pool.MasterConnectionPool 24 connections initialized for /172.16.3.170:6379
+2023-08-17 13:46:57 INFO  main com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2023-08-17 13:46:57 INFO  main com.runjing.learn_runjing.spring.SpringHolder 容器事件监听者收到事件：org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.web.context.support.GenericWebApplicationContext@aced190, started on Thu Aug 17 13:46:51 CST 2023]
+2023-08-17 13:46:57 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Started LearnRunjingApplicationTests in 6.248 seconds (process running for 7.35)
+2023-08-17 13:46:58 INFO  main com.runjing.learn_runjing.erp.controller.ErpInventoryCoreController /rpc/erp/inventoryCore/get/1
+2023-08-17 13:46:58 INFO  runjing-learn-1 com.runjing.learn_runjing.erp.controller.ErpInventoryCoreController /rpc/erp/inventoryCore/get/1
+2023-08-17 13:46:58 INFO  main com.runjing.learn_runjing.redis.redisson.RedissonLockAspect 尝试锁：1getErpInventoryCoreByIdclass com.runjing.learn_runjing.erp.general.BaseResponse1692251218369，持有时间：10
+2023-08-17 13:46:58 INFO  runjing-learn-1 com.runjing.learn_runjing.redis.redisson.RedissonLockAspect 尝试锁：1getErpInventoryCoreByIdclass com.runjing.learn_runjing.erp.general.BaseResponse1692251218369，持有时间：10
+2023-08-17 13:47:01 INFO  runjing-learn-1 com.runjing.learn_runjing.dataSource.DynamicDataSourceHolder 数据源切换为：READ
+2023-08-17 13:47:01 INFO  runjing-learn-1 com.runjing.learn_runjing.dataSource.DynamicDataSourceHolder 移除数据源：READ
+2023-08-17 13:47:01 INFO  runjing-learn-1 com.runjing.learn_runjing.redis.redisson.RedissonLockAspect 释放锁：1getErpInventoryCoreByIdclass com.runjing.learn_runjing.erp.general.BaseResponse1692251218369
+2023-08-17 13:47:01 INFO  runjing-learn-1 com.runjing.learn_runjing.redis.redisson.RedissonLockService 锁：1getErpInventoryCoreByIdclass com.runjing.learn_runjing.erp.general.BaseResponse1692251218369释放
+2023-08-17 13:47:01 INFO  runjing-learn-1 com.runjing.learn_runjing.redis.redisson.RedissonLockAspect 释放锁：1getErpInventoryCoreByIdclass com.runjing.learn_runjing.erp.general.BaseResponse1692251218369
+2023-08-17 13:47:04 INFO  main com.runjing.learn_runjing.dataSource.DynamicDataSourceHolder 数据源切换为：READ
+2023-08-17 13:47:04 INFO  main com.runjing.learn_runjing.dataSource.DynamicDataSourceHolder 移除数据源：READ
+2023-08-17 13:47:04 INFO  main com.runjing.learn_runjing.redis.redisson.RedissonLockAspect 释放锁：1getErpInventoryCoreByIdclass com.runjing.learn_runjing.erp.general.BaseResponse1692251218369
+2023-08-17 13:47:04 INFO  main com.runjing.learn_runjing.redis.redisson.RedissonLockService 锁：1getErpInventoryCoreByIdclass com.runjing.learn_runjing.erp.general.BaseResponse1692251218369释放
+2023-08-17 13:47:04 INFO  main com.runjing.learn_runjing.redis.redisson.RedissonLockAspect 释放锁：1getErpInventoryCoreByIdclass com.runjing.learn_runjing.erp.general.BaseResponse1692251218369
+2023-08-17 13:47:04 INFO  SpringApplicationShutdownHook com.runjing.learn_runjing.spring.SpringHolder 容器事件监听者收到事件：org.springframework.context.event.ContextClosedEvent[source=org.springframework.web.context.support.GenericWebApplicationContext@aced190, started on Thu Aug 17 13:46:51 CST 2023]
+2023-08-17 13:47:04 INFO  SpringApplicationShutdownHook com.runjing.learn_runjing.spring.SpringHolder 容器上下文透传感知接受销毁
+2023-08-17 13:47:04 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:9876] result: true
+2023-08-17 13:47:04 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.142:10921] result: true
+2023-08-17 13:47:04 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:10921] result: true
+2023-08-17 13:47:04 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.142:10911] result: true
+2023-08-17 13:47:04 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.143:10921] result: true
+2023-08-17 13:47:04 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:10911] result: true
+2023-08-17 13:47:04 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.143:10911] result: true
+2023-08-17 13:47:04 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closing ...
+2023-08-17 13:47:04 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closed
+2023-08-17 13:47:04 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-0} closing ...
+2023-08-17 13:58:07 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 8.0.0.Final
+2023-08-17 13:58:07 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Starting LearnRunjingApplicationTests using Java 20.0.1 with PID 29452 (started by admin in D:\code_git_repo_forestSpringH\learn_runjing)
+2023-08-17 13:58:07 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests No active profile set, falling back to 1 default profile: "default"
+2023-08-17 13:58:08 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-17 13:58:08 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-08-17 13:58:08 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 13 ms. Found 0 JDBC repository interfaces.
+2023-08-17 13:58:08 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-17 13:58:08 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-17 13:58:08 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-08-17 13:58:10 INFO  main org.redisson.Version Redisson 3.15.5
+2023-08-17 13:58:11 INFO  redisson-netty-2-23 org.redisson.connection.pool.MasterPubSubConnectionPool 1 connections initialized for /172.16.3.170:6379
+2023-08-17 13:58:11 INFO  redisson-netty-2-19 org.redisson.connection.pool.MasterConnectionPool 24 connections initialized for /172.16.3.170:6379
+2023-08-17 13:58:13 INFO  main com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2023-08-17 13:58:13 INFO  main com.runjing.learn_runjing.spring.SpringHolder 容器事件监听者收到事件：org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.web.context.support.GenericWebApplicationContext@78411116, started on Thu Aug 17 13:58:08 CST 2023]
+2023-08-17 13:58:13 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Started LearnRunjingApplicationTests in 6.539 seconds (process running for 7.7)
+2023-08-17 13:58:14 INFO  main com.runjing.learn_runjing.erp.controller.ErpInventoryCoreController object:com.runjing.learn_runjing.erp.controller.ErpInventoryCoreController@76a1cc1a,url:/rpc/erp/inventoryCore/get/1
+2023-08-17 13:58:14 INFO  runjing-learn-1 com.runjing.learn_runjing.erp.controller.ErpInventoryCoreController object:com.runjing.learn_runjing.erp.controller.ErpInventoryCoreController@76a1cc1a,url:/rpc/erp/inventoryCore/get/1
+2023-08-17 13:58:14 INFO  main com.runjing.learn_runjing.redis.redisson.RedissonLockAspect 尝试锁：1getErpInventoryCoreByIdclass com.runjing.learn_runjing.erp.general.BaseResponse1692251894660，持有时间：10
+2023-08-17 13:58:14 INFO  runjing-learn-1 com.runjing.learn_runjing.redis.redisson.RedissonLockAspect 尝试锁：1getErpInventoryCoreByIdclass com.runjing.learn_runjing.erp.general.BaseResponse1692251894660，持有时间：10
+2023-08-17 13:58:14 INFO  main com.runjing.learn_runjing.redis.redisson.RedissonLockService 获取锁：1getErpInventoryCoreByIdclass com.runjing.learn_runjing.erp.general.BaseResponse1692251894660
+2023-08-17 13:58:14 INFO  runjing-learn-1 com.runjing.learn_runjing.redis.redisson.RedissonLockService 获取锁：1getErpInventoryCoreByIdclass com.runjing.learn_runjing.erp.general.BaseResponse1692251894660
+2023-08-17 13:58:17 INFO  runjing-learn-1 com.runjing.learn_runjing.dataSource.DynamicDataSourceHolder 数据源切换为：READ
+2023-08-17 13:58:17 INFO  runjing-learn-1 com.runjing.learn_runjing.dataSource.DynamicDataSourceHolder 移除数据源：READ
+2023-08-17 13:58:17 INFO  runjing-learn-1 com.runjing.learn_runjing.redis.redisson.RedissonLockAspect 释放锁：1getErpInventoryCoreByIdclass com.runjing.learn_runjing.erp.general.BaseResponse1692251894660
+2023-08-17 13:58:17 INFO  runjing-learn-1 com.runjing.learn_runjing.redis.redisson.RedissonLockService 锁：1getErpInventoryCoreByIdclass com.runjing.learn_runjing.erp.general.BaseResponse1692251894660释放
+2023-08-17 13:58:17 INFO  runjing-learn-1 com.runjing.learn_runjing.redis.redisson.RedissonLockAspect 释放锁：1getErpInventoryCoreByIdclass com.runjing.learn_runjing.erp.general.BaseResponse1692251894660
+2023-08-17 13:58:20 INFO  main com.runjing.learn_runjing.dataSource.DynamicDataSourceHolder 数据源切换为：READ
+2023-08-17 13:58:20 INFO  main com.runjing.learn_runjing.dataSource.DynamicDataSourceHolder 移除数据源：READ
+2023-08-17 13:58:20 INFO  main com.runjing.learn_runjing.redis.redisson.RedissonLockAspect 释放锁：1getErpInventoryCoreByIdclass com.runjing.learn_runjing.erp.general.BaseResponse1692251894660
+2023-08-17 13:58:20 INFO  main com.runjing.learn_runjing.redis.redisson.RedissonLockService 锁：1getErpInventoryCoreByIdclass com.runjing.learn_runjing.erp.general.BaseResponse1692251894660释放
+2023-08-17 13:58:20 INFO  main com.runjing.learn_runjing.redis.redisson.RedissonLockAspect 释放锁：1getErpInventoryCoreByIdclass com.runjing.learn_runjing.erp.general.BaseResponse1692251894660
+2023-08-17 13:58:20 INFO  SpringApplicationShutdownHook com.runjing.learn_runjing.spring.SpringHolder 容器事件监听者收到事件：org.springframework.context.event.ContextClosedEvent[source=org.springframework.web.context.support.GenericWebApplicationContext@78411116, started on Thu Aug 17 13:58:08 CST 2023]
+2023-08-17 13:58:20 INFO  SpringApplicationShutdownHook com.runjing.learn_runjing.spring.SpringHolder 容器上下文透传感知接受销毁
+2023-08-17 13:58:20 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.143:10921] result: true
+2023-08-17 13:58:20 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:10911] result: true
+2023-08-17 13:58:20 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:9876] result: true
+2023-08-17 13:58:20 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.143:10911] result: true
+2023-08-17 13:58:20 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:10921] result: true
+2023-08-17 13:58:20 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.142:10921] result: true
+2023-08-17 13:58:20 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.142:10911] result: true
+2023-08-17 13:58:20 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closing ...
+2023-08-17 13:58:20 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closed
+2023-08-17 13:58:20 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-0} closing ...
+2023-08-17 14:04:22 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 8.0.0.Final
+2023-08-17 14:04:22 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Starting LearnRunjingApplicationTests using Java 20.0.1 with PID 28684 (started by admin in D:\code_git_repo_forestSpringH\learn_runjing)
+2023-08-17 14:04:22 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests No active profile set, falling back to 1 default profile: "default"
+2023-08-17 14:04:23 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-17 14:04:23 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-08-17 14:04:23 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 14 ms. Found 0 JDBC repository interfaces.
+2023-08-17 14:04:23 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-17 14:04:23 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-17 14:04:23 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-08-17 14:04:25 INFO  main org.redisson.Version Redisson 3.15.5
+2023-08-17 14:04:27 INFO  redisson-netty-2-13 org.redisson.connection.pool.MasterPubSubConnectionPool 1 connections initialized for /172.16.3.170:6379
+2023-08-17 14:04:27 INFO  redisson-netty-2-19 org.redisson.connection.pool.MasterConnectionPool 24 connections initialized for /172.16.3.170:6379
+2023-08-17 14:04:29 INFO  main com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2023-08-17 14:04:29 INFO  main com.runjing.learn_runjing.spring.SpringHolder 容器事件监听者收到事件：org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.web.context.support.GenericWebApplicationContext@78411116, started on Thu Aug 17 14:04:22 CST 2023]
+2023-08-17 14:04:29 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Started LearnRunjingApplicationTests in 7.158 seconds (process running for 8.402)
+2023-08-17 14:04:30 INFO  main com.runjing.learn_runjing.erp.controller.ErpInventoryCoreController object:com.runjing.learn_runjing.erp.controller.ErpInventoryCoreController@76a1cc1a,url:/rpc/erp/inventoryCore/get/1
+2023-08-17 14:04:30 INFO  runjing-learn-1 com.runjing.learn_runjing.erp.controller.ErpInventoryCoreController object:com.runjing.learn_runjing.erp.controller.ErpInventoryCoreController@76a1cc1a,url:/rpc/erp/inventoryCore/get/1
+2023-08-17 14:04:30 INFO  main com.runjing.learn_runjing.redis.redisson.RedissonLockAspect 尝试锁：1getErpInventoryCoreById，持有时间：10
+2023-08-17 14:04:30 INFO  runjing-learn-1 com.runjing.learn_runjing.redis.redisson.RedissonLockAspect 尝试锁：1getErpInventoryCoreById，持有时间：10
+2023-08-17 14:04:30 INFO  runjing-learn-1 com.runjing.learn_runjing.redis.redisson.RedissonLockService 获取锁：1getErpInventoryCoreById
+2023-08-17 14:04:30 INFO  main com.runjing.learn_runjing.redis.redisson.RedissonLockService 获取锁：1getErpInventoryCoreById
+2023-08-17 14:04:30 INFO  runjing-learn-1 com.runjing.learn_runjing.redis.redisson.RedissonLockAspect 锁获取成功，执行逻辑
+2023-08-17 14:04:33 INFO  runjing-learn-1 com.runjing.learn_runjing.dataSource.DynamicDataSourceHolder 数据源切换为：READ
+2023-08-17 14:04:33 INFO  runjing-learn-1 com.runjing.learn_runjing.dataSource.DynamicDataSourceHolder 移除数据源：READ
+2023-08-17 14:04:33 INFO  runjing-learn-1 com.runjing.learn_runjing.redis.redisson.RedissonLockAspect 释放锁：1getErpInventoryCoreById
+2023-08-17 14:04:33 INFO  runjing-learn-1 com.runjing.learn_runjing.redis.redisson.RedissonLockService 锁：1getErpInventoryCoreById释放
+2023-08-17 14:04:33 INFO  runjing-learn-1 com.runjing.learn_runjing.redis.redisson.RedissonLockAspect 释放锁：1getErpInventoryCoreById
+2023-08-17 14:04:33 INFO  main com.runjing.learn_runjing.redis.redisson.RedissonLockAspect 锁获取成功，执行逻辑
+2023-08-17 14:04:36 INFO  main com.runjing.learn_runjing.dataSource.DynamicDataSourceHolder 数据源切换为：READ
+2023-08-17 14:04:36 INFO  main com.runjing.learn_runjing.dataSource.DynamicDataSourceHolder 移除数据源：READ
+2023-08-17 14:04:36 INFO  main com.runjing.learn_runjing.redis.redisson.RedissonLockAspect 释放锁：1getErpInventoryCoreById
+2023-08-17 14:04:36 INFO  main com.runjing.learn_runjing.redis.redisson.RedissonLockService 锁：1getErpInventoryCoreById释放
+2023-08-17 14:04:36 INFO  main com.runjing.learn_runjing.redis.redisson.RedissonLockAspect 释放锁：1getErpInventoryCoreById
+2023-08-17 14:04:36 INFO  SpringApplicationShutdownHook com.runjing.learn_runjing.spring.SpringHolder 容器事件监听者收到事件：org.springframework.context.event.ContextClosedEvent[source=org.springframework.web.context.support.GenericWebApplicationContext@78411116, started on Thu Aug 17 14:04:22 CST 2023]
+2023-08-17 14:04:36 INFO  SpringApplicationShutdownHook com.runjing.learn_runjing.spring.SpringHolder 容器上下文透传感知接受销毁
+2023-08-17 14:04:36 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.142:10921] result: true
+2023-08-17 14:04:36 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:9876] result: true
+2023-08-17 14:04:36 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:10921] result: true
+2023-08-17 14:04:36 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.142:10911] result: true
+2023-08-17 14:04:36 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.143:10921] result: true
+2023-08-17 14:04:36 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:10911] result: true
+2023-08-17 14:04:36 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.143:10911] result: true
+2023-08-17 14:04:36 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closing ...
+2023-08-17 14:04:36 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closed
+2023-08-17 14:04:36 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-0} closing ...
+2023-08-17 14:07:20 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 8.0.0.Final
+2023-08-17 14:07:20 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Starting LearnRunjingApplicationTests using Java 20.0.1 with PID 25252 (started by admin in D:\code_git_repo_forestSpringH\learn_runjing)
+2023-08-17 14:07:20 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests No active profile set, falling back to 1 default profile: "default"
+2023-08-17 14:07:21 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-17 14:07:21 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-08-17 14:07:21 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 14 ms. Found 0 JDBC repository interfaces.
+2023-08-17 14:07:21 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-17 14:07:21 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-17 14:07:21 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2023-08-17 14:07:24 INFO  main org.redisson.Version Redisson 3.15.5
+2023-08-17 14:07:25 INFO  redisson-netty-2-23 org.redisson.connection.pool.MasterPubSubConnectionPool 1 connections initialized for /172.16.3.170:6379
+2023-08-17 14:07:25 INFO  redisson-netty-2-18 org.redisson.connection.pool.MasterConnectionPool 24 connections initialized for /172.16.3.170:6379
+2023-08-17 14:07:27 INFO  main com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2023-08-17 14:07:28 INFO  main com.runjing.learn_runjing.spring.SpringHolder 容器事件监听者收到事件：org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.web.context.support.GenericWebApplicationContext@78411116, started on Thu Aug 17 14:07:20 CST 2023]
+2023-08-17 14:07:28 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Started LearnRunjingApplicationTests in 7.791 seconds (process running for 8.959)
+2023-08-17 14:07:29 INFO  main com.runjing.learn_runjing.erp.controller.ErpInventoryCoreController object:com.runjing.learn_runjing.erp.controller.ErpInventoryCoreController@76a1cc1a,url:/rpc/erp/inventoryCore/get/1
+2023-08-17 14:07:29 INFO  runjing-learn-1 com.runjing.learn_runjing.erp.controller.ErpInventoryCoreController object:com.runjing.learn_runjing.erp.controller.ErpInventoryCoreController@76a1cc1a,url:/rpc/erp/inventoryCore/get/1
+2023-08-17 14:07:29 INFO  runjing-learn-1 com.runjing.learn_runjing.redis.redisson.RedissonLockAspect 尝试锁：1getErpInventoryCoreById，持有时间：10
+2023-08-17 14:07:29 INFO  main com.runjing.learn_runjing.redis.redisson.RedissonLockAspect 尝试锁：1getErpInventoryCoreById，持有时间：10
+2023-08-17 14:07:29 INFO  main com.runjing.learn_runjing.redis.redisson.RedissonLockService 获取锁：1getErpInventoryCoreById
+2023-08-17 14:07:29 INFO  runjing-learn-1 com.runjing.learn_runjing.redis.redisson.RedissonLockService 获取锁：1getErpInventoryCoreById
+2023-08-17 14:07:29 INFO  runjing-learn-1 com.runjing.learn_runjing.redis.redisson.RedissonLockAspect 锁获取成功，时间：2023-08-17T14:07:29.573652500，执行逻辑
+2023-08-17 14:07:32 INFO  runjing-learn-1 com.runjing.learn_runjing.dataSource.DynamicDataSourceHolder 数据源切换为：READ
+2023-08-17 14:07:32 INFO  runjing-learn-1 com.runjing.learn_runjing.dataSource.DynamicDataSourceHolder 移除数据源：READ
+2023-08-17 14:07:32 INFO  runjing-learn-1 com.runjing.learn_runjing.redis.redisson.RedissonLockAspect 释放锁：1getErpInventoryCoreById
+2023-08-17 14:07:32 INFO  runjing-learn-1 com.runjing.learn_runjing.redis.redisson.RedissonLockService 锁：1getErpInventoryCoreById释放
+2023-08-17 14:07:32 INFO  runjing-learn-1 com.runjing.learn_runjing.redis.redisson.RedissonLockAspect 释放锁：1getErpInventoryCoreById
+2023-08-17 14:07:32 INFO  main com.runjing.learn_runjing.redis.redisson.RedissonLockAspect 锁获取成功，时间：2023-08-17T14:07:32.684291900，执行逻辑
+2023-08-17 14:07:35 INFO  main com.runjing.learn_runjing.dataSource.DynamicDataSourceHolder 数据源切换为：READ
+2023-08-17 14:07:35 INFO  main com.runjing.learn_runjing.dataSource.DynamicDataSourceHolder 移除数据源：READ
+2023-08-17 14:07:35 INFO  main com.runjing.learn_runjing.redis.redisson.RedissonLockAspect 释放锁：1getErpInventoryCoreById
+2023-08-17 14:07:35 INFO  main com.runjing.learn_runjing.redis.redisson.RedissonLockService 锁：1getErpInventoryCoreById释放
+2023-08-17 14:07:35 INFO  main com.runjing.learn_runjing.redis.redisson.RedissonLockAspect 释放锁：1getErpInventoryCoreById
+2023-08-17 14:07:35 INFO  SpringApplicationShutdownHook com.runjing.learn_runjing.spring.SpringHolder 容器事件监听者收到事件：org.springframework.context.event.ContextClosedEvent[source=org.springframework.web.context.support.GenericWebApplicationContext@78411116, started on Thu Aug 17 14:07:20 CST 2023]
+2023-08-17 14:07:35 INFO  SpringApplicationShutdownHook com.runjing.learn_runjing.spring.SpringHolder 容器上下文透传感知接受销毁
+2023-08-17 14:07:35 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:10911] result: true
+2023-08-17 14:07:35 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:9876] result: true
+2023-08-17 14:07:35 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:10921] result: true
+2023-08-17 14:07:35 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.142:10921] result: true
+2023-08-17 14:07:35 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.143:10921] result: true
+2023-08-17 14:07:35 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.143:10911] result: true
+2023-08-17 14:07:35 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.142:10911] result: true
+2023-08-17 14:07:35 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closing ...
+2023-08-17 14:07:35 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closed
+2023-08-17 14:07:35 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-0} closing ...

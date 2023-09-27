@@ -21,6 +21,11 @@
         <mybatis.version>3.0.2</mybatis.version>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>com.hlc</groupId>
+            <artifactId>idempotent-boot</artifactId>
+            <version>1.0.0</version>
+        </dependency>
         <!--restful自动依赖配置包-->
         <dependency>
             <groupId>cn.soboys</groupId>

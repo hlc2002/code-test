@@ -1,5 +1,6 @@
 package com.runjing.learn_runjing.erp.general;
 
+import com.hlc.idempotentboot.jar.basic.IdempotentResponse;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -13,7 +14,7 @@ import java.util.Map;
  */
 @Getter
 @Setter
-public class BaseResponse<T> extends BaseModel{
+public class BaseResponse<T> extends BaseModel implements IdempotentResponse {
 
     private int code;
     private String message;
