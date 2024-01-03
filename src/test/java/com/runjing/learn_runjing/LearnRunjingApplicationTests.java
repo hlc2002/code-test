@@ -53,7 +53,6 @@ class LearnRunjingApplicationTests {
         ids.add(1L);
         ids.add(2L);
         erpInventoryCoreService.getBatchInventoryCoreList(ids);
-        erpInventoryCoreService.getBatchInventoryCoreList(ids);
     }
 
     @Resource
@@ -115,4 +114,10 @@ class LearnRunjingApplicationTests {
         }
     }
 
+
+    public static void main(String[] args) {
+        String S = "SSS";
+        S.toCharArray();
+        System.out.println(4%2);
+    }
 }

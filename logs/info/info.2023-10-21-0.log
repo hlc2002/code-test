@@ -1,0 +1,279 @@
+2023-10-21 09:12:04 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 8.0.0.Final
+2023-10-21 09:12:04 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Starting LearnRunjingApplicationTests using Java 20.0.1 with PID 16084 (started by admin in D:\code_git_repo_forestSpringH\learn_runjing)
+2023-10-21 09:12:04 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests No active profile set, falling back to 1 default profile: "default"
+2023-10-21 09:12:05 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-21 09:12:05 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-10-21 09:12:05 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 24 ms. Found 0 JDBC repository interfaces.
+2023-10-21 09:12:05 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-21 09:12:05 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-10-21 09:12:05 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-10-21 09:12:07 INFO  main org.redisson.Version Redisson 3.15.5
+2023-10-21 09:12:07 INFO  redisson-netty-2-21 org.redisson.connection.pool.MasterPubSubConnectionPool 1 connections initialized for /172.16.3.170:6379
+2023-10-21 09:12:07 INFO  redisson-netty-2-19 org.redisson.connection.pool.MasterConnectionPool 24 connections initialized for /172.16.3.170:6379
+2023-10-21 09:12:09 INFO  main com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2023-10-21 09:12:09 INFO  main com.runjing.learn_runjing.spring.SpringHolder 容器事件监听者收到事件：org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.web.context.support.GenericWebApplicationContext@6edaa77a, started on Sat Oct 21 09:12:04 CST 2023]
+2023-10-21 09:12:09 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Started LearnRunjingApplicationTests in 5.835 seconds (process running for 6.88)
+2023-10-21 09:12:10 INFO  SpringApplicationShutdownHook com.runjing.learn_runjing.spring.SpringHolder 容器事件监听者收到事件：org.springframework.context.event.ContextClosedEvent[source=org.springframework.web.context.support.GenericWebApplicationContext@6edaa77a, started on Sat Oct 21 09:12:04 CST 2023]
+2023-10-21 09:12:10 INFO  SpringApplicationShutdownHook com.runjing.learn_runjing.spring.SpringHolder 容器上下文透传感知接受销毁
+2023-10-21 09:12:10 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:9876] result: true
+2023-10-21 09:12:10 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:10911] result: true
+2023-10-21 09:12:10 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.142:10921] result: true
+2023-10-21 09:12:10 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.143:10921] result: true
+2023-10-21 09:12:10 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.143:10911] result: true
+2023-10-21 09:12:10 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:10921] result: true
+2023-10-21 09:12:10 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.142:10911] result: true
+2023-10-21 09:12:10 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closing ...
+2023-10-21 09:12:10 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closed
+2023-10-21 09:12:10 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-0} closing ...
+2023-10-21 09:20:06 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 8.0.0.Final
+2023-10-21 09:20:06 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Starting LearnRunjingApplicationTests using Java 20.0.1 with PID 19000 (started by admin in D:\code_git_repo_forestSpringH\learn_runjing)
+2023-10-21 09:20:06 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests No active profile set, falling back to 1 default profile: "default"
+2023-10-21 09:20:06 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-21 09:20:06 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-10-21 09:20:06 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 14 ms. Found 0 JDBC repository interfaces.
+2023-10-21 09:20:06 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-21 09:20:06 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-10-21 09:20:06 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-10-21 09:20:08 INFO  main org.redisson.Version Redisson 3.15.5
+2023-10-21 09:20:08 INFO  redisson-netty-2-23 org.redisson.connection.pool.MasterPubSubConnectionPool 1 connections initialized for /172.16.3.170:6379
+2023-10-21 09:20:08 INFO  redisson-netty-2-18 org.redisson.connection.pool.MasterConnectionPool 24 connections initialized for /172.16.3.170:6379
+2023-10-21 09:20:10 INFO  main com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2023-10-21 09:20:10 INFO  main com.runjing.learn_runjing.spring.SpringHolder 容器事件监听者收到事件：org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.web.context.support.GenericWebApplicationContext@245a060f, started on Sat Oct 21 09:20:06 CST 2023]
+2023-10-21 09:20:10 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Started LearnRunjingApplicationTests in 4.87 seconds (process running for 5.938)
+2023-10-21 09:20:11 INFO  SpringApplicationShutdownHook com.runjing.learn_runjing.spring.SpringHolder 容器事件监听者收到事件：org.springframework.context.event.ContextClosedEvent[source=org.springframework.web.context.support.GenericWebApplicationContext@245a060f, started on Sat Oct 21 09:20:06 CST 2023]
+2023-10-21 09:20:11 INFO  SpringApplicationShutdownHook com.runjing.learn_runjing.spring.SpringHolder 容器上下文透传感知接受销毁
+2023-10-21 09:20:11 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:9876] result: true
+2023-10-21 09:20:11 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.142:10921] result: true
+2023-10-21 09:20:11 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:10921] result: true
+2023-10-21 09:20:11 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.143:10921] result: true
+2023-10-21 09:20:11 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:10911] result: true
+2023-10-21 09:20:11 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.142:10911] result: true
+2023-10-21 09:20:11 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.143:10911] result: true
+2023-10-21 09:20:11 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closing ...
+2023-10-21 09:20:11 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closed
+2023-10-21 09:20:11 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-0} closing ...
+2023-10-21 09:20:36 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 8.0.0.Final
+2023-10-21 09:20:36 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Starting LearnRunjingApplicationTests using Java 20.0.1 with PID 14520 (started by admin in D:\code_git_repo_forestSpringH\learn_runjing)
+2023-10-21 09:20:36 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests No active profile set, falling back to 1 default profile: "default"
+2023-10-21 09:20:37 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-21 09:20:37 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-10-21 09:20:37 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 13 ms. Found 0 JDBC repository interfaces.
+2023-10-21 09:20:37 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-21 09:20:37 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-10-21 09:20:37 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-10-21 09:20:38 INFO  main org.redisson.Version Redisson 3.15.5
+2023-10-21 09:20:39 INFO  redisson-netty-2-24 org.redisson.connection.pool.MasterPubSubConnectionPool 1 connections initialized for /172.16.3.170:6379
+2023-10-21 09:20:39 INFO  redisson-netty-2-16 org.redisson.connection.pool.MasterConnectionPool 24 connections initialized for /172.16.3.170:6379
+2023-10-21 09:20:40 INFO  main com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2023-10-21 09:20:40 INFO  main com.runjing.learn_runjing.spring.SpringHolder 容器事件监听者收到事件：org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.web.context.support.GenericWebApplicationContext@1e63d216, started on Sat Oct 21 09:20:36 CST 2023]
+2023-10-21 09:20:40 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Started LearnRunjingApplicationTests in 4.829 seconds (process running for 5.742)
+2023-10-21 09:20:41 INFO  SpringApplicationShutdownHook com.runjing.learn_runjing.spring.SpringHolder 容器事件监听者收到事件：org.springframework.context.event.ContextClosedEvent[source=org.springframework.web.context.support.GenericWebApplicationContext@1e63d216, started on Sat Oct 21 09:20:36 CST 2023]
+2023-10-21 09:20:41 INFO  SpringApplicationShutdownHook com.runjing.learn_runjing.spring.SpringHolder 容器上下文透传感知接受销毁
+2023-10-21 09:20:41 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:9876] result: true
+2023-10-21 09:20:41 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.143:10921] result: true
+2023-10-21 09:20:41 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.142:10921] result: true
+2023-10-21 09:20:41 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:10911] result: true
+2023-10-21 09:20:41 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.143:10911] result: true
+2023-10-21 09:20:41 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:10921] result: true
+2023-10-21 09:20:41 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.142:10911] result: true
+2023-10-21 09:20:41 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closing ...
+2023-10-21 09:20:41 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closed
+2023-10-21 09:20:41 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-0} closing ...
+2023-10-21 09:24:24 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 8.0.0.Final
+2023-10-21 09:24:24 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Starting LearnRunjingApplicationTests using Java 20.0.1 with PID 21256 (started by admin in D:\code_git_repo_forestSpringH\learn_runjing)
+2023-10-21 09:24:24 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests No active profile set, falling back to 1 default profile: "default"
+2023-10-21 09:24:25 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-21 09:24:25 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-10-21 09:24:25 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 12 ms. Found 0 JDBC repository interfaces.
+2023-10-21 09:24:25 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-21 09:24:25 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-10-21 09:24:25 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-10-21 09:24:26 INFO  main org.redisson.Version Redisson 3.15.5
+2023-10-21 09:24:27 INFO  redisson-netty-2-16 org.redisson.connection.pool.MasterPubSubConnectionPool 1 connections initialized for /172.16.3.170:6379
+2023-10-21 09:24:27 INFO  redisson-netty-2-19 org.redisson.connection.pool.MasterConnectionPool 24 connections initialized for /172.16.3.170:6379
+2023-10-21 09:24:28 INFO  main com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2023-10-21 09:24:29 INFO  main com.runjing.learn_runjing.spring.SpringHolder 容器事件监听者收到事件：org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.web.context.support.GenericWebApplicationContext@6edaa77a, started on Sat Oct 21 09:24:24 CST 2023]
+2023-10-21 09:24:29 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Started LearnRunjingApplicationTests in 5.395 seconds (process running for 6.386)
+2023-10-21 09:24:30 INFO  SpringApplicationShutdownHook com.runjing.learn_runjing.spring.SpringHolder 容器事件监听者收到事件：org.springframework.context.event.ContextClosedEvent[source=org.springframework.web.context.support.GenericWebApplicationContext@6edaa77a, started on Sat Oct 21 09:24:24 CST 2023]
+2023-10-21 09:24:30 INFO  SpringApplicationShutdownHook com.runjing.learn_runjing.spring.SpringHolder 容器上下文透传感知接受销毁
+2023-10-21 09:24:30 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:9876] result: true
+2023-10-21 09:24:30 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.143:10921] result: true
+2023-10-21 09:24:30 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:10921] result: true
+2023-10-21 09:24:30 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.143:10911] result: true
+2023-10-21 09:24:30 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.142:10921] result: true
+2023-10-21 09:24:30 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.142:10911] result: true
+2023-10-21 09:24:30 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:10911] result: true
+2023-10-21 09:24:30 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closing ...
+2023-10-21 09:24:30 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closed
+2023-10-21 09:24:30 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-0} closing ...
+2023-10-21 09:25:48 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 8.0.0.Final
+2023-10-21 09:25:48 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Starting LearnRunjingApplicationTests using Java 20.0.1 with PID 4144 (started by admin in D:\code_git_repo_forestSpringH\learn_runjing)
+2023-10-21 09:25:48 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests No active profile set, falling back to 1 default profile: "default"
+2023-10-21 09:25:48 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-21 09:25:48 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-10-21 09:25:48 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 14 ms. Found 0 JDBC repository interfaces.
+2023-10-21 09:25:49 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-21 09:25:49 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-10-21 09:25:49 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-10-21 09:25:50 INFO  main org.redisson.Version Redisson 3.15.5
+2023-10-21 09:25:50 INFO  redisson-netty-2-23 org.redisson.connection.pool.MasterPubSubConnectionPool 1 connections initialized for /172.16.3.170:6379
+2023-10-21 09:25:50 INFO  redisson-netty-2-19 org.redisson.connection.pool.MasterConnectionPool 24 connections initialized for /172.16.3.170:6379
+2023-10-21 09:25:52 INFO  main com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2023-10-21 09:25:52 INFO  main com.runjing.learn_runjing.spring.SpringHolder 容器事件监听者收到事件：org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.web.context.support.GenericWebApplicationContext@6edaa77a, started on Sat Oct 21 09:25:48 CST 2023]
+2023-10-21 09:25:52 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Started LearnRunjingApplicationTests in 4.775 seconds (process running for 5.73)
+2023-10-21 09:25:53 INFO  SpringApplicationShutdownHook com.runjing.learn_runjing.spring.SpringHolder 容器事件监听者收到事件：org.springframework.context.event.ContextClosedEvent[source=org.springframework.web.context.support.GenericWebApplicationContext@6edaa77a, started on Sat Oct 21 09:25:48 CST 2023]
+2023-10-21 09:25:53 INFO  SpringApplicationShutdownHook com.runjing.learn_runjing.spring.SpringHolder 容器上下文透传感知接受销毁
+2023-10-21 09:25:53 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.142:10921] result: true
+2023-10-21 09:25:53 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:9876] result: true
+2023-10-21 09:25:53 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.142:10911] result: true
+2023-10-21 09:25:53 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.143:10921] result: true
+2023-10-21 09:25:53 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:10911] result: true
+2023-10-21 09:25:53 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:10921] result: true
+2023-10-21 09:25:53 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.143:10911] result: true
+2023-10-21 09:25:53 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closing ...
+2023-10-21 09:25:53 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closed
+2023-10-21 09:25:53 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-0} closing ...
+2023-10-21 09:27:25 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 8.0.0.Final
+2023-10-21 09:27:25 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Starting LearnRunjingApplicationTests using Java 20.0.1 with PID 21060 (started by admin in D:\code_git_repo_forestSpringH\learn_runjing)
+2023-10-21 09:27:25 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests No active profile set, falling back to 1 default profile: "default"
+2023-10-21 09:27:26 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-21 09:27:26 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-10-21 09:27:26 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 12 ms. Found 0 JDBC repository interfaces.
+2023-10-21 09:27:26 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-21 09:27:26 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-10-21 09:27:26 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2023-10-21 09:27:28 INFO  main org.redisson.Version Redisson 3.15.5
+2023-10-21 09:27:28 INFO  redisson-netty-2-17 org.redisson.connection.pool.MasterPubSubConnectionPool 1 connections initialized for /172.16.3.170:6379
+2023-10-21 09:27:28 INFO  redisson-netty-2-18 org.redisson.connection.pool.MasterConnectionPool 24 connections initialized for /172.16.3.170:6379
+2023-10-21 09:27:30 INFO  main com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2023-10-21 09:27:30 INFO  main com.runjing.learn_runjing.spring.SpringHolder 容器事件监听者收到事件：org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.web.context.support.GenericWebApplicationContext@1e63d216, started on Sat Oct 21 09:27:25 CST 2023]
+2023-10-21 09:27:30 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Started LearnRunjingApplicationTests in 5.079 seconds (process running for 6.013)
+2023-10-21 09:27:31 INFO  SpringApplicationShutdownHook com.runjing.learn_runjing.spring.SpringHolder 容器事件监听者收到事件：org.springframework.context.event.ContextClosedEvent[source=org.springframework.web.context.support.GenericWebApplicationContext@1e63d216, started on Sat Oct 21 09:27:25 CST 2023]
+2023-10-21 09:27:31 INFO  SpringApplicationShutdownHook com.runjing.learn_runjing.spring.SpringHolder 容器上下文透传感知接受销毁
+2023-10-21 09:27:31 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:9876] result: true
+2023-10-21 09:27:31 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:10911] result: true
+2023-10-21 09:27:31 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.143:10921] result: true
+2023-10-21 09:27:31 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.142:10921] result: true
+2023-10-21 09:27:31 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.142:10911] result: true
+2023-10-21 09:27:31 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.143:10911] result: true
+2023-10-21 09:27:31 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:10921] result: true
+2023-10-21 09:27:31 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closing ...
+2023-10-21 09:27:31 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closed
+2023-10-21 09:27:31 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-0} closing ...
+2023-10-21 09:46:03 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 8.0.0.Final
+2023-10-21 09:46:03 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Starting LearnRunjingApplicationTests using Java 20.0.1 with PID 21144 (started by admin in D:\code_git_repo_forestSpringH\learn_runjing)
+2023-10-21 09:46:03 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests No active profile set, falling back to 1 default profile: "default"
+2023-10-21 09:46:04 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-21 09:46:04 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-10-21 09:46:04 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 13 ms. Found 0 JDBC repository interfaces.
+2023-10-21 09:46:04 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-21 09:46:04 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-10-21 09:46:04 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-10-21 09:46:04 INFO  main org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-10-21 09:48:44 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 8.0.0.Final
+2023-10-21 09:48:44 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Starting LearnRunjingApplicationTests using Java 20.0.1 with PID 6500 (started by admin in D:\code_git_repo_forestSpringH\learn_runjing)
+2023-10-21 09:48:44 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests No active profile set, falling back to 1 default profile: "default"
+2023-10-21 09:48:45 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-21 09:48:45 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-10-21 09:48:45 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 13 ms. Found 0 JDBC repository interfaces.
+2023-10-21 09:48:45 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-21 09:48:45 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-10-21 09:48:45 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-10-21 09:48:46 INFO  main org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-10-21 09:52:10 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 8.0.0.Final
+2023-10-21 09:52:10 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Starting LearnRunjingApplicationTests using Java 20.0.1 with PID 3436 (started by admin in D:\code_git_repo_forestSpringH\learn_runjing)
+2023-10-21 09:52:10 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests No active profile set, falling back to 1 default profile: "default"
+2023-10-21 09:52:10 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-21 09:52:10 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-10-21 09:52:10 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 13 ms. Found 0 JDBC repository interfaces.
+2023-10-21 09:52:10 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-21 09:52:10 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-10-21 09:52:10 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-10-21 09:52:11 INFO  main org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-10-21 10:43:39 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 8.0.0.Final
+2023-10-21 10:43:39 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Starting LearnRunjingApplicationTests using Java 20.0.1 with PID 20608 (started by admin in D:\code_git_repo_forestSpringH\learn_runjing)
+2023-10-21 10:43:39 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests No active profile set, falling back to 1 default profile: "default"
+2023-10-21 10:43:40 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-21 10:43:40 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-10-21 10:43:40 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 21 ms. Found 0 JDBC repository interfaces.
+2023-10-21 10:43:40 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-21 10:43:40 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-10-21 10:43:41 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-10-21 10:43:42 INFO  main org.redisson.Version Redisson 3.15.5
+2023-10-21 10:43:43 INFO  redisson-netty-2-23 org.redisson.connection.pool.MasterPubSubConnectionPool 1 connections initialized for /172.16.3.170:6379
+2023-10-21 10:43:43 INFO  redisson-netty-2-19 org.redisson.connection.pool.MasterConnectionPool 24 connections initialized for /172.16.3.170:6379
+2023-10-21 10:43:44 INFO  main com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2023-10-21 10:43:45 INFO  main com.runjing.learn_runjing.spring.SpringHolder 容器事件监听者收到事件：org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.web.context.support.GenericWebApplicationContext@245a060f, started on Sat Oct 21 10:43:40 CST 2023]
+2023-10-21 10:43:45 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Started LearnRunjingApplicationTests in 5.905 seconds (process running for 7.087)
+2023-10-21 10:43:46 INFO  SpringApplicationShutdownHook com.runjing.learn_runjing.spring.SpringHolder 容器事件监听者收到事件：org.springframework.context.event.ContextClosedEvent[source=org.springframework.web.context.support.GenericWebApplicationContext@245a060f, started on Sat Oct 21 10:43:40 CST 2023]
+2023-10-21 10:43:46 INFO  SpringApplicationShutdownHook com.runjing.learn_runjing.spring.SpringHolder 容器上下文透传感知接受销毁
+2023-10-21 10:43:46 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.142:10921] result: true
+2023-10-21 10:43:46 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.143:10921] result: true
+2023-10-21 10:43:46 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:9876] result: true
+2023-10-21 10:43:46 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.143:10911] result: true
+2023-10-21 10:43:46 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:10911] result: true
+2023-10-21 10:43:46 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.142:10911] result: true
+2023-10-21 10:43:46 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:10921] result: true
+2023-10-21 10:43:46 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closing ...
+2023-10-21 10:43:46 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closed
+2023-10-21 10:43:46 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-0} closing ...
+2023-10-21 11:44:15 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 8.0.0.Final
+2023-10-21 11:44:15 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Starting LearnRunjingApplicationTests using Java 20.0.1 with PID 10332 (started by admin in D:\code_git_repo_forestSpringH\learn_runjing)
+2023-10-21 11:44:15 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests No active profile set, falling back to 1 default profile: "default"
+2023-10-21 11:44:16 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-21 11:44:16 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-10-21 11:44:16 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 16 ms. Found 0 JDBC repository interfaces.
+2023-10-21 11:44:16 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-21 11:44:16 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-10-21 11:44:16 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-10-21 11:44:18 INFO  main org.redisson.Version Redisson 3.15.5
+2023-10-21 11:44:18 INFO  redisson-netty-2-22 org.redisson.connection.pool.MasterPubSubConnectionPool 1 connections initialized for /172.16.3.170:6379
+2023-10-21 11:44:18 INFO  redisson-netty-2-16 org.redisson.connection.pool.MasterConnectionPool 24 connections initialized for /172.16.3.170:6379
+2023-10-21 11:44:20 INFO  main com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2023-10-21 11:44:21 INFO  main com.runjing.learn_runjing.spring.SpringHolder 容器事件监听者收到事件：org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.web.context.support.GenericWebApplicationContext@6edaa77a, started on Sat Oct 21 11:44:15 CST 2023]
+2023-10-21 11:44:21 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Started LearnRunjingApplicationTests in 5.706 seconds (process running for 6.739)
+2023-10-21 11:44:21 INFO  SpringApplicationShutdownHook com.runjing.learn_runjing.spring.SpringHolder 容器事件监听者收到事件：org.springframework.context.event.ContextClosedEvent[source=org.springframework.web.context.support.GenericWebApplicationContext@6edaa77a, started on Sat Oct 21 11:44:15 CST 2023]
+2023-10-21 11:44:21 INFO  SpringApplicationShutdownHook com.runjing.learn_runjing.spring.SpringHolder 容器上下文透传感知接受销毁
+2023-10-21 11:44:22 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:9876] result: true
+2023-10-21 11:44:22 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.143:10921] result: true
+2023-10-21 11:44:22 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.142:10921] result: true
+2023-10-21 11:44:22 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:10911] result: true
+2023-10-21 11:44:22 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.143:10911] result: true
+2023-10-21 11:44:22 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:10921] result: true
+2023-10-21 11:44:22 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.142:10911] result: true
+2023-10-21 11:44:22 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closing ...
+2023-10-21 11:44:22 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closed
+2023-10-21 11:44:22 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-0} closing ...
+2023-10-21 11:48:44 INFO  background-preinit org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 8.0.0.Final
+2023-10-21 11:48:44 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Starting LearnRunjingApplicationTests using Java 20.0.1 with PID 16672 (started by admin in D:\code_git_repo_forestSpringH\learn_runjing)
+2023-10-21 11:48:44 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests No active profile set, falling back to 1 default profile: "default"
+2023-10-21 11:48:45 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-21 11:48:45 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-10-21 11:48:45 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 21 ms. Found 0 JDBC repository interfaces.
+2023-10-21 11:48:45 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-21 11:48:45 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-10-21 11:48:45 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-10-21 11:48:46 INFO  main org.redisson.Version Redisson 3.15.5
+2023-10-21 11:48:47 INFO  redisson-netty-2-13 org.redisson.connection.pool.MasterPubSubConnectionPool 1 connections initialized for /172.16.3.170:6379
+2023-10-21 11:48:47 INFO  redisson-netty-2-15 org.redisson.connection.pool.MasterConnectionPool 24 connections initialized for /172.16.3.170:6379
+2023-10-21 11:48:49 INFO  main com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2023-10-21 11:48:49 INFO  main com.runjing.learn_runjing.spring.SpringHolder 容器事件监听者收到事件：org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.web.context.support.GenericWebApplicationContext@6edaa77a, started on Sat Oct 21 11:48:44 CST 2023]
+2023-10-21 11:48:49 INFO  main com.runjing.learn_runjing.LearnRunjingApplicationTests Started LearnRunjingApplicationTests in 5.695 seconds (process running for 6.723)
+2023-10-21 11:48:50 INFO  SpringApplicationShutdownHook com.runjing.learn_runjing.spring.SpringHolder 容器事件监听者收到事件：org.springframework.context.event.ContextClosedEvent[source=org.springframework.web.context.support.GenericWebApplicationContext@6edaa77a, started on Sat Oct 21 11:48:44 CST 2023]
+2023-10-21 11:48:50 INFO  SpringApplicationShutdownHook com.runjing.learn_runjing.spring.SpringHolder 容器上下文透传感知接受销毁
+2023-10-21 11:48:50 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.142:10921] result: true
+2023-10-21 11:48:50 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:9876] result: true
+2023-10-21 11:48:50 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:10911] result: true
+2023-10-21 11:48:50 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.141:10921] result: true
+2023-10-21 11:48:50 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.142:10911] result: true
+2023-10-21 11:48:50 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.143:10921] result: true
+2023-10-21 11:48:50 INFO  NettyClientSelector_1 RocketmqRemoting closeChannel: close the connection to remote address[172.16.3.143:10911] result: true
+2023-10-21 11:48:50 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closing ...
+2023-10-21 11:48:50 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-1} closed
+2023-10-21 11:48:50 INFO  SpringApplicationShutdownHook com.alibaba.druid.pool.DruidDataSource {dataSource-0} closing ...

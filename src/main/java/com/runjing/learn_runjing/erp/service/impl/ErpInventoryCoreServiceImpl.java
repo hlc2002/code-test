@@ -11,9 +11,11 @@ import org.apache.ibatis.cursor.Cursor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.TransactionTemplate;
 import org.springframework.util.CollectionUtils;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -68,11 +70,23 @@ public class ErpInventoryCoreServiceImpl implements ErpInventoryCoreService {
     }
 
     @Override
+//    @Transactional(rollbackFor = Exception.class,transactionManager = "ERPTransactionManager")
+    @Transactional(rollbackFor = Exception.class)
     public List<ErpInventoryCore> getBatchInventoryCoreList(List<Long> list) {
         if (CollectionUtils.isEmpty(list)){
             throw new RuntimeException("id列表为空");
         }
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        saveLog();
         return erpInventoryCoreMapper.getBatch(list);
+    }
+
+    private void saveLog(){
+        throw new RuntimeException("数据异常！"+ LocalDateTime.now());
     }
 
 }
