@@ -16,4 +16,6 @@ public interface ErpInventoryCoreService {
     BaseResponse<ErpInventoryCore> getErpInventoryCoreById(Long id);
 
     List<ErpInventoryCore> getBatchInventoryCoreList(List<Long> list);
+
+    void print();
 }

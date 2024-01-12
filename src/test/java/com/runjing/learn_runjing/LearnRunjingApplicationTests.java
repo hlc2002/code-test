@@ -4,6 +4,7 @@ import com.runjing.learn_runjing.erp.controller.ErpInventoryCoreController;
 import com.runjing.learn_runjing.erp.domain.ErpInventoryCore;
 import com.runjing.learn_runjing.erp.general.BaseResponse;
 import com.runjing.learn_runjing.erp.service.ErpInventoryCoreService;
+import com.runjing.learn_runjing.lua.LuaGetSpringBeanConfig;
 import com.runjing.learn_runjing.redis.util.RedisUtil;
 import com.runjing.learn_runjing.utils.AddressAndCodeFiltration;
 import jakarta.annotation.Resource;
@@ -115,9 +116,10 @@ class LearnRunjingApplicationTests {
     }
 
 
-    public static void main(String[] args) {
-        String S = "SSS";
-        S.toCharArray();
-        System.out.println(4%2);
+    @Resource
+    private LuaGetSpringBeanConfig luaGetSpringBeanConfig;
+    @Test
+    public void testLua() {
+        luaGetSpringBeanConfig.lua();
     }
 }

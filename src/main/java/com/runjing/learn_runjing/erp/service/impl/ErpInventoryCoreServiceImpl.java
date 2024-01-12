@@ -25,7 +25,7 @@ import java.util.Objects;
 * @description 针对表【erp_inventory_core(库存核心表)】的数据库操作Service实现
 * @createDate 2023-06-17 17:08:21
 */
-@Service
+@Service("erpInventoryCoreService")
 @Slf4j
 public class ErpInventoryCoreServiceImpl implements ErpInventoryCoreService {
 
@@ -83,6 +83,11 @@ public class ErpInventoryCoreServiceImpl implements ErpInventoryCoreService {
         }
         saveLog();
         return erpInventoryCoreMapper.getBatch(list);
+    }
+
+    @Override
+    public void print() {
+        System.out.println("11111111111111111111111111111111111111");
     }
 
     private void saveLog(){
