@@ -1,5 +1,6 @@
 package com.runjing.learn_runjing.spring;
 
+import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.DisposableBean;
@@ -23,6 +24,7 @@ import java.util.*;
 @Slf4j
 public class SpringHolder implements ApplicationContextAware, DisposableBean, ApplicationEventPublisher, ApplicationListener<ApplicationContextEvent> {
 
+    @Getter
     private static ApplicationContext applicationContext;
     @Override
     public void destroy() throws Exception {
@@ -33,10 +35,6 @@ public class SpringHolder implements ApplicationContextAware, DisposableBean, Ap
     @Override
     public void setApplicationContext(@NonNull ApplicationContext applicationContext) throws BeansException {
         SpringHolder.applicationContext = applicationContext;
-    }
-
-    public static ApplicationContext getApplicationContext() {
-        return applicationContext;
     }
 
     @Override
