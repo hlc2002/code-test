@@ -115,6 +115,10 @@ class LearnRunjingApplicationTests {
         }
     }
 
+    public static void main(String[] args) {
+        Integer integer = 0;
+        System.out.println(String.valueOf(integer));
+    }
 
     @Resource
     private LuaGetSpringBeanConfig luaGetSpringBeanConfig;
