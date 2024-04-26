@@ -14,6 +14,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.geo.Point;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -116,8 +118,9 @@ class LearnRunjingApplicationTests {
     }
 
     public static void main(String[] args) {
-        Integer integer = 0;
-        System.out.println(String.valueOf(integer));
+        BigDecimal s = new BigDecimal(60);
+        BigDecimal s1 = new BigDecimal(12);
+        System.out.println(s.subtract(s1).multiply(new BigDecimal(100)).divide(s1,0, RoundingMode.HALF_UP).intValue());
     }
 
     @Resource
