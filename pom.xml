@@ -28,11 +28,11 @@
             <artifactId>xxl-job-core</artifactId>
             <version>${xxl-job.version}</version>
         </dependency>
-        <dependency>
-            <groupId>com.hlc</groupId>
-            <artifactId>idempotent-boot</artifactId>
-            <version>1.0.0</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.hlc</groupId>-->
+<!--            <artifactId>idempotent-boot</artifactId>-->
+<!--            <version>1.0.0</version>-->
+<!--        </dependency>-->
         <!--restful自动依赖配置包-->
         <dependency>
             <groupId>cn.soboys</groupId>
@@ -143,11 +143,11 @@
             <artifactId>redisson</artifactId>
             <version>3.15.5</version>
         </dependency>
-        <dependency>
-            <groupId>com.runjing</groupId>
-            <artifactId>runjing-redisson-autoLock-boot-starter</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.runjing</groupId>-->
+<!--            <artifactId>runjing-redisson-autoLock-boot-starter</artifactId>-->
+<!--            <version>0.0.1-SNAPSHOT</version>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
